@@ -3,10 +3,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.negrita {
-    font-weight: bold;
-}
-
 .navy {
     color: #000080;
 }
@@ -25,7 +21,14 @@ html {
 }
 
 #modalCheckboxInicio:checked~.inicioSesion,
-#modalCheckboxRegistro:checked~.registro {
+#modalCheckboxRegistro:checked~.registro,
+#modalCheckboxVoluntario1:checked ~ #modal1,
+#modalCheckboxVoluntario2:checked ~ #modal2,
+#modalCheckboxVoluntario3:checked ~ #modal3, 
+#modalCheckboxProyecto1:checked ~ #modalProyecto1,
+#modalCheckboxProyecto2:checked ~ #modalProyecto2,
+#modalCheckboxProyecto3:checked ~ #modalProyecto3,
+#modalCheckboxProyectos:checked ~ .modal {
     display: flex;
 }
 
@@ -342,18 +345,13 @@ html {
 /* Estilos para las tarjetas de proyectos pendientes */
 .card {
     border-radius: 0.5rem;
-    /* Bordes redondeados */
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
-    /* Sombra */
     margin-bottom: 1rem;
-    /* Espaciado inferior */
 }
 
 .card-content {
     background-color: #f9f9f9;
-    /* Color de fondo */
     padding: 1.5rem;
-    /* Espaciado interno */
 }
 
 .card .title {
@@ -622,4 +620,123 @@ input[type="checkbox"]:checked~label.toggle-label::after {
 
 .perfil{
     background-color: whitesmoke;
+}
+
+.info-personal p, .contacto p, .datos-adicionales p, .experiencia p, .disponibilidad p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.experiencia p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+strong {
+    color: #0077cc;
+}
+
+.modal-voluntario .modal-card-body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.modal-voluntario .modal-card {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    background: white;
+}
+.modal-voluntario .modal-background {
+    background-color: rgba(0, 0, 0, 0.2); /* Ajusta el último valor (0.5) para mayor o menor transparencia */
+}
+.modal-voluntario .button.is-success {
+    background-color: #000080 !important; 
+    border-color: #000080;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-voluntario .button.is-success:hover {
+    background-color: #333333 !important; 
+    
+}
+.modal-voluntario {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+}
+.modal-voluntario .info-personal,
+.modal-voluntario .contacto,
+.modal-voluntario .datos-adicionales,
+.modal-voluntario .experiencia,
+.modal-voluntario .disponibilidad {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Justificar el texto de experiencia */
+.modal-voluntario .experiencia p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Resaltar títulos dentro del modal */
+.modal-voluntario strong {
+    color: #000080;
+}
+
+/* Ajustar tamaño y alineación del botón de cerrar */
+.modal-voluntario .modal-card-foot {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.modal-voluntario .modal-card-foot .button {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.modal-proyecto {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+}
+.modal-proyecto .modal-card {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+    background: white;
+}
+
+/* Botón de cierre */
+.modal-proyecto .modal-card-foot {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.modal-proyecto .modal-card-foot .button {
+    padding: 10px 20px;
+    font-weight: bold;
 }

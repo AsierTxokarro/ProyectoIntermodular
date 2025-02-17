@@ -1,0 +1,625 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.navy {
+    color: #000080;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+}
+
+#modalCheckboxInicio:checked~.inicioSesion,
+#modalCheckboxRegistro:checked~.registro {
+    display: flex;
+}
+
+.modal .registro {
+    max-width: 40rem;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal .inicioSesion {
+    max-width: 25rem;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-card-title {
+    font-weight: bold;
+    color: #000080;
+}
+
+.intro-text {
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.modal-card-foot {
+    padding: 5px 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button.is-large {
+    font-size: 1.25rem;
+    /* Increase font size */
+    padding: 0.75rem 1.5rem;
+    /* Increase padding */
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.footer-logo {
+    max-height: 30px;
+    /* Adjust the size as needed */
+    width: auto;
+    margin-bottom: 10px;
+    /* Add margin to the bottom */
+    margin-right: 10px;
+    /* Add margin to the right */
+}
+
+/* Field Styles */
+.field .label {
+    color: #000080;
+}
+
+.field .control .input {
+    border: 1px solid #000080;
+}
+
+.field .control .input:focus {
+    border-color: #000060;
+    box-shadow: 0 0 0 0.125em rgba(0, 0, 128, 0.25);
+}
+
+/* Button Styles */
+.button.is-link,
+.delete {
+    background-color: #000080;
+}
+
+.button.is-link:hover,
+.delete:hover {
+    background-color: #000040;
+}
+
+.hero .button.is-info:hover,
+.hero .button.is-dark:hover {
+    background-color: #000080;
+    color: white;
+}
+
+/* Navbar Styles */
+.navbar-brand .navbar-item img {
+    max-height: 3.5rem;
+}
+
+.hero .navbar-link,
+.hero .navbar-dropdown .navbar-item {
+    color: #000080 !important;
+}
+
+.hero .navbar-dropdown,
+.hero .navbar-dropdown .navbar-item {
+    color: #000080 !important;
+    background-color: white !important;
+}
+
+.hero .navbar-dropdown {
+    border: solid 1px #000080;
+    border-top-color: whitesmoke;
+}
+
+.hero .navbar-dropdown .navbar-item:hover {
+    color: whitesmoke !important;
+    background-color: #000080 !important;
+}
+
+.nav-coordinador .nav-coordinador .navbar-link {
+    color: black !important;
+}
+
+/* Full Width Image Styles */
+.full-width-image {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.full-width-image .image.is-fullwidth img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* No Padding Styles */
+.no-padding {
+    padding: 0;
+    margin: 0;
+}
+
+/* Button Overlay Styles */
+.button-overlay {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.button-overlay .button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    transition: all 0.3s;
+}
+
+.button-overlay .button:hover {
+    background-color: #000080;
+}
+
+/* Footer Styles */
+.footer {
+    padding: 3rem 5rem;
+}
+
+#footer-text {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.footer-logo {
+    max-height: 3rem;
+    width: auto;
+}
+
+#google-maps {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-icons {
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    color: #000080;
+    font-size: 1.8rem;
+}
+
+.social-icons a:hover {
+    color: rgb(102, 209, 255);
+}
+
+/* Steps Section Styles */
+.steps-section {
+    background-color: white;
+}
+
+.steps-section .title {
+    text-align: center;
+    color: #000080;
+    margin-bottom: 2rem;
+}
+
+.steps-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.steps-list li {
+    list-style-type: none;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: solid 1px #000080;
+    box-shadow: 0 2px 4px #000080;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.steps-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px #000060;
+}
+
+.step-title {
+    font-size: 1.5rem;
+    color: #000080;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Column Styles */
+.columna1 {
+    padding: 0;
+    margin: 1rem;
+}
+
+.columna1 img {
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px #000060;
+}
+
+.columna2 .is-multiline {
+    border: solid 1px #000080;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px #000060;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.columna2 .is-multiline2 {
+    border: solid 1px #000080;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px #000060;
+    margin: 2rem auto 0;
+    background-color: whitesmoke;
+}
+
+.columna2 p {
+    text-align: center;
+    margin: 1rem;
+    /* Añade espacio entre los párrafos y la lista */
+}
+
+.columna2 ol {
+    list-style-position: inside;
+    /* Asegura que los números de la lista estén dentro del contenedor */
+    padding-left: 0;
+    /* Elimina el padding izquierdo de la lista */
+}
+
+.columna2 ul {
+    text-align: center;
+}
+
+.tabulacion {
+    margin-left: 3rem;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    z-index: 1000;
+    background-color: whitesmoke;
+    color: #000080;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 128, 0.5);
+}
+
+.back-to-top:hover {
+    background-color: #000060;
+    color: white;
+}
+
+/* Estilos para las tarjetas de proyectos pendientes */
+.card {
+    border-radius: 0.5rem;
+    /* Bordes redondeados */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    margin-bottom: 1rem;
+    /* Espaciado inferior */
+}
+
+.card-content {
+    background-color: #f9f9f9;
+    /* Color de fondo */
+    padding: 1.5rem;
+    /* Espaciado interno */
+}
+
+.card .title {
+    color: #000080;
+    /* Color del título */
+    margin-bottom: 0.5rem;
+    /* Espaciado inferior */
+}
+
+.card .subtitle {
+    color: #000060;
+    /* Color del subtítulo */
+    margin-bottom: 1rem;
+    /* Espaciado inferior */
+}
+
+.card p {
+    color: #333;
+    /* Color del texto */
+    margin-bottom: 0.5rem;
+    /* Espaciado inferior */
+}
+
+.card-footer {
+    background-color: #f9f9f9;
+    /* Color de fondo */
+    border-top: 1px solid #ddd;
+    /* Borde superior */
+}
+
+.card-footer .button {
+    flex: 1;
+    /* Ocupa todo el ancho disponible */
+    margin: 0.25rem;
+    /* Espaciado interno */
+}
+
+.card-footer .button.is-success {
+    background-color: #000080;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+}
+
+.card-footer .button.is-success:hover {
+    background-color: #218838;
+    /* Color de fondo al pasar el ratón */
+}
+
+.card-footer .button.is-danger {
+    background-color: #333;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+}
+
+.card-footer .button.is-danger:hover {
+    background-color: #c82333;
+    /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el campo de búsqueda */
+.field .input {
+    border: 1px solid #000080;
+    /* Borde */
+    border-radius: 0.25rem;
+    /* Bordes redondeados */
+}
+
+.field .input:focus {
+    border-color: #000060;
+    /* Color del borde al enfocar */
+    box-shadow: 0 0 0 0.125rem rgba(0, 0, 128, 0.25);
+    /* Sombra */
+}
+
+.field .icon.is-left {
+    color: #000080;
+    /* Color del icono */
+}
+
+.pagination {
+    margin-top: 3rem;
+    ;
+}
+
+
+
+
+/* Estilos para la sección de "Quiénes Somos" */
+.bordered-container {
+    border: 1px solid #000080;
+    /* Borde */
+    border-radius: 1rem;
+    /* Bordes redondeados */
+    padding: 1rem;
+    /* Espaciado interno */
+    margin-bottom: 2rem;
+    /* Espaciado inferior */
+}
+
+.has-background-info {
+    background-color: #000080 !important;
+}
+
+.has-text-white {
+    color: white;
+    /* Color del texto */
+}
+
+.has-text-justified {
+    text-align: justify;
+    /* Texto justificado */
+}
+
+.mt-0 {
+    margin-top: 0;
+    /* Sin margen superior */
+}
+
+.mb-0 {
+    margin-bottom: 0;
+    /* Sin margen inferior */
+}
+
+/* Estilos para la sección de "Qué Hacemos" */
+.column .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+    /* Elimina los bordes de las imágenes */
+}
+
+.image-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    color: white;
+    padding: 1rem;
+    /* Espaciado interno */
+    text-align: center;
+}
+
+/* Estilos para la sección de "Preguntas Frecuentes" */
+.box {
+    border-radius: 0.5rem;
+    /* Bordes redondeados */
+    padding: 1rem;
+    /* Espaciado interno */
+    margin-bottom: 1rem;
+    /* Espaciado inferior */
+}
+
+.box summary {
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el resumen */
+}
+
+
+
+
+
+
+.card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.card-image .image.is-4by3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-list li a {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-list li a.active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilos para el texto colapsado ("Leer más") */
+
+.content-noticias {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.content-noticias {
+    display: block;
+    -webkit-line-clamp: unset;
+    /* Muestra todo el texto */
+    opacity: 1;
+}
+
+/* Estilos para el botón "Leer más/Leer menos" usando pseudo-elementos */
+
+.toggle-label {
+    display: inline-block;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 5px;
+    color: #3273dc;
+}
+
+.toggle-label:hover {
+    text-decoration: underline;
+}
+
+/* Por defecto muestra "Leer más" */
+
+.toggle-label::after {
+    content: "Leer más";
+}
+
+/* Cuando el checkbox está marcado, muestra "Leer menos" */
+
+input[type="checkbox"]:checked~label.toggle-label::after {
+    content: "Leer menos";
+}
+
+/* Estilos para el contenedor con aspecto de viñeta */
+.vignette {
+    border: 1px solid #000080; /* Borde */
+    border-radius: 1rem; /* Bordes redondeados */
+    padding: 1.5rem; /* Espaciado interno */
+    margin-bottom: 4rem; /* Espaciado inferior */
+    background-color: whitesmoke; /* Color de fondo */
+    color:#000080;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 128, 0.5); /* Sombra */
+    position: relative;
+    overflow: hidden;
+}
+
+.perfil{
+    background-color: whitesmoke;
+}

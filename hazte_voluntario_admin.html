@@ -12,214 +12,6 @@
 
 <body>
 
-  <input type="checkbox" id="modalCheckboxInicio" class="is-hidden">
-  <input type="checkbox" id="modalCheckboxRegistro" class="is-hidden">
-
-
-  <div class="modal inicioSesion">
-    <div class="modal-card inicioSesion">
-      <header class="modal-card-head">
-        <p class="modal-card-title has-text-centered">Inicio de Sesión</p>
-        <label for="modalCheckboxInicio" class="delete" aria-label="close"></label>
-      </header>
-      <section class="modal-card-body">
-        <form action="./se_busca_admin.html" method="POST">
-          <div class="field">
-            <label class="label">Correo electrónico:</label>
-            <div class="control">
-              <input class="input" type="email" name="email" placeholder="correo@ejemplo.com" required>
-            </div>
-          </div>
-          <div class="field">
-            <label class="label">Contraseña:</label>
-            <div class="control">
-              <input class="input" type="password" name="password" placeholder="Tu contraseña" required>
-            </div>
-          </div>
-          <div class="field">
-            <button type="submit" class="button is-link is-fullwidth">Acceder</button>
-          </div>
-        </form>
-      </section>
-    </div>
-  </div>
-
-  <div class="modal registro">
-    <div class="modal-card registro">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Hazte voluntario/a y marca la diferencia!</p>
-        <label for="modalCheckboxRegistro" class="delete" aria-label="close"></label>
-      </header>
-      <section class="modal-card-body">
-        <p class="intro-text">Envía tu candidatura para unirte a nuestro equipo de voluntariado,
-          una vez revisado te enviaremos un correo electrónico con los pasos a seguir.</p>
-        <form action="./index.html" method="POST">
-          <div class="field">
-            <label class="label">Nombre*</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Introduce tu nombre" required>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Apellidos*</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Introduce tus apellidos" required>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Edad*</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Introduce tu edad" required>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Email*</label>
-            <div class="control has-icons-left">
-              <input class="input" type="email" placeholder="Introduce tu correo electrónico" required>
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Teléfono*</label>
-            <div class="control has-icons-left">
-              <input class="input" type="tel" placeholder="Número de teléfono" pattern="[0-9]{9}" required>
-              <span class="icon is-small is-left">
-                <i class="fas fa-phone"></i>
-              </span>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Curso*</label>
-            <div class="control">
-              <div class="select">
-                <select required>
-                  <option value="">Selecciona tu Curso</option>
-                  <option value="CFS Administración y Finanzas DUAL">CFS Administración y Finanzas DUAL</option>
-                  <option value="CFS Comercio Internacional DUAL BILINGÜE">CFS Comercio Internacional DUAL BILINGÜE
-                  </option>
-                  <option value="CFS Gestión de Ventas y Espacios Comerciales DUAL">CFS Gestión de Ventas y Espacios
-                    Comerciales DUAL</option>
-                  <option value="CFS Transporte y Logística DUAL">CFS Transporte y Logística DUAL</option>
-                  <option value="CFS Transporte y Logística Virtual">CFS Transporte y Logística Virtual</option>
-                  <option value="CFS Administración de Sistemas Informáticos en Red DUAL">CFS Administración de Sistemas
-                    Informáticos en Red DUAL</option>
-                  <option value="CFS Desarrollo de Aplicaciones Multiplataforma DUAL">CFS Desarrollo de Aplicaciones
-                    Multiplataforma DUAL</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">¿En qué año estas?*</label>
-            <div class="control" required>
-              <label class="radio">
-                <input type="radio" name="curso" value="si" required>
-                Primero
-              </label>
-              <label class="radio">
-                <input type="radio" name="curso" value="no" required>
-                Segundo
-              </label>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">¿Tienes experiencia previa?</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Escribe tu respuesta aquí..."></textarea>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">Disponibilidad semanal*</label>
-            <div class="control">
-              <div class="select">
-                <select required>
-                  <option value="">Selecciona</option>
-                  <option value="1-2 horas">1-2 horas</option>
-                  <option value="3-4 horas">3-4 horas</option>
-                  <option value="+5 horas">+5 horas</option>
-                  <option value="1-2 horas">Talleres puntuales</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">¿Tienes coche propio?*</label>
-            <div class="control" required>
-              <label class="radio">
-                <input type="radio" name="coche" value="si" required>
-                Sí
-              </label>
-              <label class="radio">
-                <input type="radio" name="coche" value="no" required>
-                No
-              </label>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">¿Qué tipo de voluntariado te gustaría hacer?*</label>
-            <div class="control">
-              <div class="select">
-                <select required>
-                  <option value="">Tipos</option>
-                  <option value="Social">Social</option>
-                  <option value="Educativo">Educativo</option>
-                  <option value="Cultural">Cultural</option>
-                  <option value="Ambiental">Ambiental</option>
-                  <option value="Salud">Salud</option>
-                  <option value="Internacional">Internacional</option>
-                  <option value="Deportivo">Deportivo</option>
-                  <option value="Digital">Digital</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">¿Estarías interesado/a en hacer voluntariado técnico?*</label>
-            <div class="control" required>
-              <label class="radio">
-                <input type="radio" name="voluntariado técnico" value="si" required>
-                Sí
-              </label>
-              <label class="radio">
-                <input type="radio" name="voluntariado técnico" value="no" required>
-                No
-              </label>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="label">¿Cuales son los conocimientos técnicos que podrías aportar?</label>
-            <div class="control">
-              <textarea class="textarea" placeholder="Escribe tu respuesta aquí..."></textarea>
-            </div>
-          </div>
-
-          <footer class="modal-card-foot">
-            <div class="field">
-              <button type="submit" class="button is-link is-fullwidth">Enviar solicitud</button>
-            </div>
-            <div class="footer-logo-container">
-              <img src="./images/LOGO4V.png" alt="Voluntariado Cuatrovientos" class="footer-logo">
-            </div>
-          </footer>
-        </form>
-      </section>
-    </div>
-  </div>
-
   <section class="hero is-light has-text-weight-bold">
     <div class="hero-head">
       <div class="navbar container">
@@ -237,9 +29,20 @@
         <div class="navbar-menu">
           <div class="navbar-end">
             <div class="navbar-item">
-              <div class="buttons">
-                <label for="modalCheckboxRegistro" class="button is-info">Hazte Voluntario</label>
-                <label for="modalCheckboxInicio" class="button is-dark">Iniciar Sesión</label>
+              <div class="card-content perfil">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48px">
+                      <img class="is-rounded" src="./images/FOTO-PERFIL.png" />
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-6">Ana Martín Perez</p>
+                    <p class="subtitle is-7 rol-perfil">Coordinador/a |
+                      <a class="subtitle is-7" href="./index.html"> Cerrar sesión</a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -252,29 +55,28 @@
         <div class="container is-max-desktop">
           <div class="navbar-menu">
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="./index.html">
+              <a class="navbar-link" href="./se_busca_admin.html">
                 SE BUSCA
               </a>
               <div class="navbar-dropdown">
-                <a href="./index.html#pasos" class="navbar-item">
+                <a href="./se_busca_admin.html#se-buscan" class="navbar-item">
                   SE BUSCAN VOLUNTARIOS/AS
                 </a>
-                <a href="./index.html#pasos" class="navbar-item">
+                <a href="./se_busca_admin.html#pasos" class="navbar-item">
                   PASOS PARA SER VOLUNTARIO/A
                 </a>
               </div>
             </div>
 
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="./hazte_voluntario.html">
+              <a class="navbar-link" href="#">
                 HAZTE VOLUNTARIO/A
               </a>
-
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="#quienes-somos">
+                <a class="navbar-item" href="#quienes_somos">
                   ¿QUIÉNES SOMOS?
                 </a>
-                <a class="navbar-item" href="#que-hacemos">
+                <a class="navbar-item" href="#que_hacemos">
                   ¿QUÉ HACEMOS?
                 </a>
                 <a class="navbar-item" href="#preguntas-frecuentes">
@@ -282,16 +84,46 @@
                 </a>
               </div>
             </div>
+
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="./noticias.html">
+              <a class="navbar-link" href="./noticias_admin.html">
                 NOTICIAS
               </a>
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="./noticias.html#actualidad">
+                <a class="navbar-item" href="./noticias_admin.html#actualidad">
                   ACTUALIDAD EN EL VOLUNTARIADO
                 </a>
               </div>
             </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="./gestion_voluntariado.html">
+                GESTIÓN VOLUNTARIADO
+              </a>
+              <div class="navbar-dropdown">
+                <a href="./gestion_voluntariado.html" class="navbar-item">
+                  VOLUNTARIOS ACTIVOS
+                </a>
+                <a href="./voluntarios_pendientes.html" class="navbar-item">
+                  PENDIENTES
+                </a>
+              </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="./gestion_proyectos.html">
+                GESTIÓN DE PROYECTOS
+              </a>
+              <div class="navbar-dropdown">
+                <a href="./gestion_proyectos.html" class="navbar-item">
+                  PROYECTOS EN CURSO
+                </a>
+                <a href="./proyectos_pendientes.html" class="navbar-item">
+                  PROYECTOS PENDIENTES
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </nav>

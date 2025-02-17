@@ -118,6 +118,20 @@
           </div>
 
           <div class="field">
+            <label class="label">¿En qué año estas?*</label>
+            <div class="control" required>
+              <label class="radio">
+                <input type="radio" name="curso" value="si" required>
+                Primero
+              </label>
+              <label class="radio">
+                <input type="radio" name="curso" value="no" required>
+                Segundo
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
             <label class="label">¿Tienes experiencia previa?</label>
             <div class="control">
               <textarea class="textarea" placeholder="Escribe tu respuesta aquí..."></textarea>
@@ -133,6 +147,7 @@
                   <option value="1-2 horas">1-2 horas</option>
                   <option value="3-4 horas">3-4 horas</option>
                   <option value="+5 horas">+5 horas</option>
+                  <option value="1-2 horas">Talleres puntuales</option>
                 </select>
               </div>
             </div>
@@ -149,6 +164,46 @@
                 <input type="radio" name="coche" value="no" required>
                 No
               </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">¿Qué tipo de voluntariado te gustaría hacer?*</label>
+            <div class="control">
+              <div class="select">
+                <select required>
+                  <option value="">Tipos</option>
+                  <option value="Social">Social</option>
+                  <option value="Educativo">Educativo</option>
+                  <option value="Cultural">Cultural</option>
+                  <option value="Ambiental">Ambiental</option>
+                  <option value="Salud">Salud</option>
+                  <option value="Internacional">Internacional</option>
+                  <option value="Deportivo">Deportivo</option>
+                  <option value="Digital">Digital</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">¿Estarías interesado/a en hacer voluntariado técnico?*</label>
+            <div class="control" required>
+              <label class="radio">
+                <input type="radio" name="voluntariado técnico" value="si" required>
+                Sí
+              </label>
+              <label class="radio">
+                <input type="radio" name="voluntariado técnico" value="no" required>
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">¿Cuales son los conocimientos técnicos que podrías aportar?</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Escribe tu respuesta aquí..."></textarea>
             </div>
           </div>
 
@@ -246,130 +301,98 @@
 
   <main>
     <section id="actualidad" class="section">
-      <div class="container">
-          <nav class="level">
-              <div class="level-left">
-                  <div class="level-item">
-                      <h1 class="title has-text-black-bis">Actualidad en el voluntariado</h1>
-                  </div>
-              </div>
-              <div class="level-right">
-                  <div class="level-item">
-                      <div class="buttons">
-                          <a href="./mas_noticias.html" class="button is-dark">Ver más noticias</a>
-                      </div>
-                  </div>
-              </div>
-          </nav>
-      </div>
-  </section>
+        <div class="container">
+            <nav class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <h1 class="title has-text-black-bis">Actualidad en el voluntariado</h1>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="buttons">
+                            <a href="./mas_noticias.html" class="button is-dark">Ver más noticias</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
 
-  <section class="section">
-      <div class="container">
-          <div class="columns is-multiline">
-              <div class="column is-one-third">
-                  <div class="card has-background-white-ter">
-                      <a href="https://unzutxikiberri.org/" target="_blank">
-                          <div class="card-image">
-                              <figure class="image is-4by3">
-                                  <img src="./images/unzutxiki2.png" alt="Voluntarios enseñando a abuelos como usar la tecnología">
-                              </figure>
-                          </div>
-                          <div class="card-content">
-                              <p class="title is-4 navy">Unzutxiki</p>
-                              <input type="checkbox" id="toggle1">
-                              <div class="content-noticias">
-                                  <p class="subtitle is-6">
-                                      La Asociación Unzutxiki Berri se creó para el reparto de alimentos a familias que viven en
-                                      Buztintxuri. Cuando en 2017 dejaron de repartir alimentos en la parroquia de El Salvador, se
-                                      incorporaron las familias de esa zona de la Rotxapea a nuestra área de influencia.
-
-                                  </p>
-                                  <h1 class="title is-4 mt-2">
-                                    ODS
-                                  </h1>
-                                  <div class="container is-flex">
-                                    <figure class="image is-128x128">
-                                      <img src="./images/ODS10.png" />
-                                    </figure>
-                                    <figure class="image is-128x128">
-                                      <img src="./images/ODS3.png" />
-                                    </figure>
-                                  </div>
-
-                              </div>
-                              <label for="toggle1" class="toggle-label"></label>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-              <div class="column is-one-third">
-                  <div class="card has-background-white-ter">
-                      <a href="https://www.amavir.es/" target="_blank">
-                          <div class="card-image">
-                              <figure class="image is-4by3">
-                                  <img src="./images/AMAVIR2.jpg" alt="Chico explicando el uso del teléfono móvil a abuelos">
-                              </figure>
-                          </div>
-                          <div class="card-content">
-                              <p class="title is-4 navy">AMAVIR</p>
-                              <input type="checkbox" id="toggle2">
-                              <div class="content-noticias">
-                                  <p class="subtitle is-6">
-                                      Amavir es una de las compañías líderes en España en la atención a personas mayores y dependientes.
-                                      Nace en 2017 como fruto de la unión entre Amma y Adavir, dos empresas con más de 25 años de
-                                      experiencia en el sector.
-                                  </p>
-                                  <h1 class="title is-4 mt-2">
-                                    ODS
-                                  </h1>
-                                  <div class="container is-flex">
-                                    <figure class="image is-128x128">
-                                      <img src="./images/ODS10.png" />
-                                    </figure>
-                                    <figure class="image is-128x128">
-                                      <img src="./images/ODS3.png" />
-                                    </figure>
-                                  </div>
-                              </div>
-                              <label for="toggle2" class="toggle-label"></label>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-              <div class="column is-one-third">
-                  <div class="card has-background-white-ter">
-                      <a href="https://participa.navarra.es/processes/plan-voluntariado-navarra/f/288/meetings/102?component_id=288&locale=es&participatory_process_slug=plan-voluntariado-navarra"
-                          target="_blank">
-                          <div class="card-image">
-                              <figure class="image is-4by3">
-                                  <img src="./images/JornadaVoluntarios.jpg" alt="Dos mujeres al lado de un cartel de voluntariado de Navarra">
-                              </figure>
-                          </div>
-                          <div class="card-content">
-                              <p class="title is-4 navy">Jornada Voluntariado 360</p>
-                              <input type="checkbox" id="toggle3">
-                              <div class="content-noticias">
-                                  <p class="subtitle is-6">
-                                      El Gobierno de Navarra organiza la jornada Voluntariado 360º en la que se rendirán cuentas del II
-                                      Plan de Voluntariado 2022-2023 y se presentará el III Plan de Voluntariado 2024-2027.
-                                  </p>
-                                  <h1 class="title is-4 mt-2">
-                                    ODS
-                                  </h1>
-                                  <div class="container">
-                                    <figure class="image is-128x128">
-                                      <img src="./images/ODS17.png" />
-                                    </figure>
-                                  </div>
-                              </div>
-                              <label for="toggle3" class="toggle-label"></label>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-          </div>
-      </div>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-one-third">
+                    <div class="card has-background-white-ter">
+                        <a href="https://unzutxikiberri.org/" target="_blank">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./images/unzutxiki2.png" alt="Voluntarios enseñando a abuelos como usar la tecnología">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-4 navy">Unzutxiki</p>
+                                <input type="checkbox" id="toggle1">
+                                <div class="content-noticias">
+                                    <p class="subtitle is-6">
+                                        La Asociación Unzutxiki Berri se creó para el reparto de alimentos a familias que viven en
+                                        Buztintxuri. Cuando en 2017 dejaron de repartir alimentos en la parroquia de El Salvador, se
+                                        incorporaron las familias de esa zona de la Rotxapea a nuestra área de influencia.
+                                    </p>
+                                </div>
+                                <label for="toggle1" class="toggle-label"></label>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="card has-background-white-ter">
+                        <a href="https://www.amavir.es/" target="_blank">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./images/AMAVIR2.jpg" alt="Chico explicando el uso del teléfono móvil a abuelos">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-4 navy">AMAVIR</p>
+                                <input type="checkbox" id="toggle2">
+                                <div class="content-noticias">
+                                    <p class="subtitle is-6">
+                                        Amavir es una de las compañías líderes en España en la atención a personas mayores y dependientes.
+                                        Nace en 2017 como fruto de la unión entre Amma y Adavir, dos empresas con más de 25 años de
+                                        experiencia en el sector.
+                                    </p>
+                                </div>
+                                <label for="toggle2" class="toggle-label"></label>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-one-third">
+                    <div class="card has-background-white-ter">
+                        <a href="https://participa.navarra.es/processes/plan-voluntariado-navarra/f/288/meetings/102?component_id=288&locale=es&participatory_process_slug=plan-voluntariado-navarra"
+                            target="_blank">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="./images/JornadaVoluntarios.jpg" alt="Dos mujeres al lado de un cartel de voluntariado de Navarra">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-4 navy">Jornada Voluntariado 360</p>
+                                <input type="checkbox" id="toggle3">
+                                <div class="content-noticias">
+                                    <p class="subtitle is-6">
+                                        El Gobierno de Navarra organiza la jornada Voluntariado 360º en la que se rendirán cuentas del II
+                                        Plan de Voluntariado 2022-2023 y se presentará el III Plan de Voluntariado 2024-2027.
+                                    </p>
+                                </div>
+                                <label for="toggle3" class="toggle-label"></label>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     
 
     

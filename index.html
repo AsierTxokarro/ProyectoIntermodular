@@ -23,7 +23,7 @@
         <label for="modalCheckboxInicio" class="delete" aria-label="close"></label>
       </header>
       <section class="modal-card-body">
-        <form action="./sebusca_admin.html" method="POST">
+        <form action="./se_busca_admin.html" method="POST">
           <div class="field">
             <label class="label">Correo electrónico:</label>
             <div class="control">
@@ -118,6 +118,20 @@
           </div>
 
           <div class="field">
+            <label class="label">¿En qué año estas?*</label>
+            <div class="control" required>
+              <label class="radio">
+                <input type="radio" name="curso" value="si" required>
+                Primero
+              </label>
+              <label class="radio">
+                <input type="radio" name="curso" value="no" required>
+                Segundo
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
             <label class="label">¿Tienes experiencia previa?</label>
             <div class="control">
               <textarea class="textarea" placeholder="Escribe tu respuesta aquí..."></textarea>
@@ -133,6 +147,7 @@
                   <option value="1-2 horas">1-2 horas</option>
                   <option value="3-4 horas">3-4 horas</option>
                   <option value="+5 horas">+5 horas</option>
+                  <option value="1-2 horas">Talleres puntuales</option>
                 </select>
               </div>
             </div>
@@ -149,6 +164,46 @@
                 <input type="radio" name="coche" value="no" required>
                 No
               </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">¿Qué tipo de voluntariado te gustaría hacer?*</label>
+            <div class="control">
+              <div class="select">
+                <select required>
+                  <option value="">Tipos</option>
+                  <option value="Social">Social</option>
+                  <option value="Educativo">Educativo</option>
+                  <option value="Cultural">Cultural</option>
+                  <option value="Ambiental">Ambiental</option>
+                  <option value="Salud">Salud</option>
+                  <option value="Internacional">Internacional</option>
+                  <option value="Deportivo">Deportivo</option>
+                  <option value="Digital">Digital</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">¿Estarías interesado/a en hacer voluntariado técnico?*</label>
+            <div class="control" required>
+              <label class="radio">
+                <input type="radio" name="voluntariado técnico" value="si" required>
+                Sí
+              </label>
+              <label class="radio">
+                <input type="radio" name="voluntariado técnico" value="no" required>
+                No
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">¿Cuales son los conocimientos técnicos que podrías aportar?</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Escribe tu respuesta aquí..."></textarea>
             </div>
           </div>
 
@@ -197,14 +252,14 @@
         <div class="container is-max-desktop">
           <div class="navbar-menu">
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="#index.html">
+              <a class="navbar-link" href="./index.html">
                 SE BUSCA
               </a>
               <div class="navbar-dropdown">
-                <a href="#se-buscan" class="navbar-item">
+                <a href="./index.html#pasos" class="navbar-item">
                   SE BUSCAN VOLUNTARIOS/AS
                 </a>
-                <a href="#pasos" class="navbar-item">
+                <a href="./index.html#pasos" class="navbar-item">
                   PASOS PARA SER VOLUNTARIO/A
                 </a>
               </div>
@@ -216,13 +271,13 @@
               </a>
 
               <div class="navbar-dropdown">
-                <a class="navbar-item" href="./hazte_voluntario.html#quienes_somos">
+                <a class="navbar-item" href="#quienes-somos">
                   ¿QUIÉNES SOMOS?
                 </a>
-                <a class="navbar-item" href="./hazte_voluntario.html#que-hacemos">
+                <a class="navbar-item" href="#que-hacemos">
                   ¿QUÉ HACEMOS?
                 </a>
-                <a class="navbar-item" href="./hazte_voluntario.html#preguntas-frecuentes">
+                <a class="navbar-item" href="#preguntas-frecuentes">
                   PREGUNTAS FRECUENTES (FAQ)
                 </a>
               </div>
@@ -242,7 +297,6 @@
       </nav>
     </div>
   </section>
-
 
   <main class="section no-padding">
 

@@ -20,30 +20,32 @@ html {
     align-items: center;
 }
 
-#modalCheckboxInicio:checked~.inicioSesion,
-#modalCheckboxRegistro:checked~.registro,
-#modalCheckboxVoluntario1:checked ~ #modal1,
-#modalCheckboxVoluntario2:checked ~ #modal2,
-#modalCheckboxVoluntario3:checked ~ #modal3, 
+#modalCheckboxInicio:checked ~ .inicioSesion,
+#modalCheckboxRegistro:checked ~ .registro,
+#modalCheckboxVoluntario1:checked ~ #modalVoluntario1,
+#modalCheckboxVoluntario2:checked ~ #modalVoluntario2,
+#modalCheckboxVoluntario3:checked ~ #modalVoluntario3, 
 #modalCheckboxProyecto1:checked ~ #modalProyecto1,
 #modalCheckboxProyecto2:checked ~ #modalProyecto2,
 #modalCheckboxProyecto3:checked ~ #modalProyecto3,
-#modalCheckboxProyectos:checked ~ .modal {
+#modalCheckboxProyectos:checked ~ .modal,
+.modal-checkbox:checked + .modal  {
     display: flex;
+}
+
+.modal .registro,
+.modal .inicioSesion {
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .modal .registro {
     max-width: 40rem;
-    width: 90%;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .modal .inicioSesion {
     max-width: 25rem;
-    width: 90%;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .modal-card-title {
@@ -72,9 +74,7 @@ html {
 
 .button.is-large {
     font-size: 1.25rem;
-    /* Increase font size */
     padding: 0.75rem 1.5rem;
-    /* Increase padding */
 }
 
 .footer-logo-container {
@@ -86,12 +86,9 @@ html {
 
 .footer-logo {
     max-height: 30px;
-    /* Adjust the size as needed */
     width: auto;
     margin-bottom: 10px;
-    /* Add margin to the bottom */
     margin-right: 10px;
-    /* Add margin to the right */
 }
 
 /* Field Styles */
@@ -284,7 +281,8 @@ html {
     box-shadow: 0 2px 4px #000060;
 }
 
-.columna2 .is-multiline {
+.columna2 .is-multiline,
+.columna2 .is-multiline2 {
     border: solid 1px #000080;
     border-radius: 1rem;
     box-shadow: 0 2px 4px #000060;
@@ -293,31 +291,15 @@ html {
 }
 
 .columna2 .is-multiline2 {
-    border: solid 1px #000080;
-    border-radius: 1rem;
-    box-shadow: 0 2px 4px #000060;
     margin: 2rem auto 0;
-    background-color: whitesmoke;
 }
 
 .columna2 p {
     text-align: center;
-    margin: 1rem;
-    /* Añade espacio entre los párrafos y la lista */
+    margin: 1rem auto;
 }
 
 .columna2 ol {
-    list-style-position: inside;
-    /* Asegura que los números de la lista estén dentro del contenedor */
-    padding-left: 0;
-    /* Elimina el padding izquierdo de la lista */
-}
-
-.columna2 ul {
-    text-align: center;
-}
-
-.tabulacion {
     margin-left: 3rem;
 }
 
@@ -342,11 +324,18 @@ html {
     color: white;
 }
 
-/* Estilos para las tarjetas de proyectos pendientes */
+/* Card Styles */
 .card {
     border-radius: 0.5rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .card-content {
@@ -356,101 +345,72 @@ html {
 
 .card .title {
     color: #000080;
-    /* Color del título */
     margin-bottom: 0.5rem;
-    /* Espaciado inferior */
 }
 
 .card .subtitle {
     color: #000060;
-    /* Color del subtítulo */
     margin-bottom: 1rem;
-    /* Espaciado inferior */
 }
 
 .card p {
     color: #333;
-    /* Color del texto */
     margin-bottom: 0.5rem;
-    /* Espaciado inferior */
 }
 
 .card-footer {
     background-color: #f9f9f9;
-    /* Color de fondo */
     border-top: 1px solid #ddd;
-    /* Borde superior */
 }
 
 .card-footer .button {
     flex: 1;
-    /* Ocupa todo el ancho disponible */
     margin: 0.25rem;
-    /* Espaciado interno */
 }
 
 .card-footer .button.is-success {
     background-color: #000080;
-    /* Color de fondo */
     color: white;
-    /* Color del texto */
 }
 
 .card-footer .button.is-success:hover {
     background-color: #218838;
-    /* Color de fondo al pasar el ratón */
 }
 
 .card-footer .button.is-danger {
     background-color: #333;
-    /* Color de fondo */
     color: white;
-    /* Color del texto */
 }
 
 .card-footer .button.is-danger:hover {
     background-color: #c82333;
-    /* Color de fondo al pasar el ratón */
 }
 
-/* Estilos para el campo de búsqueda */
+/* Search Field Styles */
 .field .input {
     border: 1px solid #000080;
-    /* Borde */
     border-radius: 0.25rem;
-    /* Bordes redondeados */
 }
 
 .field .input:focus {
     border-color: #000060;
-    /* Color del borde al enfocar */
     box-shadow: 0 0 0 0.125rem rgba(0, 0, 128, 0.25);
-    /* Sombra */
 }
 
 .field .icon.is-left {
     color: #000080;
-    /* Color del icono */
 }
 
 .pagination {
     margin-top: 3rem;
-    ;
 }
 
-
-
-
-/* Estilos para la sección de "Quiénes Somos" */
+/* "Quiénes Somos" Section Styles */
 .bordered-container {
     border: 1px solid #000080;
-    /* Borde */
     border-radius: 1rem;
-    /* Bordes redondeados */
     padding: 1rem;
-    /* Espaciado interno */
     margin-bottom: 2rem;
-    /* Espaciado inferior */
 }
 
 .has-background-info {
@@ -459,25 +419,21 @@ html {
 
 .has-text-white {
     color: white;
-    /* Color del texto */
 }
 
 .has-text-justified {
     text-align: justify;
-    /* Texto justificado */
 }
 
 .mt-0 {
     margin-top: 0;
-    /* Sin margen superior */
 }
 
 .mb-0 {
     margin-bottom: 0;
-    /* Sin margen inferior */
 }
 
-/* Estilos para la sección de "Qué Hacemos" */
+/* "Qué Hacemos" Section Styles */
 .column .image-container {
     position: relative;
     overflow: hidden;
@@ -490,7 +446,6 @@ html {
     height: auto;
     display: block;
     border: none;
-    /* Elimina los bordes de las imágenes */
 }
 
 .image-content {
@@ -499,66 +454,23 @@ html {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente */
     color: white;
     padding: 1rem;
-    /* Espaciado interno */
     text-align: center;
 }
 
-/* Estilos para la sección de "Preguntas Frecuentes" */
+/* "Preguntas Frecuentes" Section Styles */
 .box {
     border-radius: 0.5rem;
-    /* Bordes redondeados */
     padding: 1rem;
-    /* Espaciado interno */
     margin-bottom: 1rem;
-    /* Espaciado inferior */
 }
 
 .box summary {
     cursor: pointer;
-    /* Cambia el cursor al pasar sobre el resumen */
 }
 
-
-
-
-
-
-.card {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-}
-
-.card-image .image.is-4by3 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.menu-list li a {
-    display: block;
-    padding: 0.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    color: inherit;
-}
-
-.menu-list li a.active {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Estilos para el texto colapsado ("Leer más") */
-
+/* Collapsed Text Styles */
 .content-noticias {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -575,12 +487,10 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked+.content-noticias {
     display: block;
     -webkit-line-clamp: unset;
-    /* Muestra todo el texto */
     opacity: 1;
 }
 
-/* Estilos para el botón "Leer más/Leer menos" usando pseudo-elementos */
-
+/* "Leer más/Leer menos" Button Styles */
 .toggle-label {
     display: inline-block;
     font-size: 0.9rem;
@@ -593,89 +503,40 @@ input[type="checkbox"]:checked+.content-noticias {
     text-decoration: underline;
 }
 
-/* Por defecto muestra "Leer más" */
-
 .toggle-label::after {
     content: "Leer más";
 }
-
-/* Cuando el checkbox está marcado, muestra "Leer menos" */
 
 input[type="checkbox"]:checked~label.toggle-label::after {
     content: "Leer menos";
 }
 
-/* Estilos para el contenedor con aspecto de viñeta */
+/* Vignette Container Styles */
 .vignette {
-    border: 1px solid #000080; /* Borde */
-    border-radius: 1rem; /* Bordes redondeados */
-    padding: 1.5rem; /* Espaciado interno */
-    margin-bottom: 4rem; /* Espaciado inferior */
-    background-color: whitesmoke; /* Color de fondo */
-    color:#000080;
-    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 128, 0.5); /* Sombra */
+    border: 1px solid #000080;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 4rem;
+    background-color: whitesmoke;
+    color: #000080;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 128, 0.5);
     position: relative;
     overflow: hidden;
 }
 
-.perfil{
+.perfil {
     background-color: whitesmoke;
 }
 
-.info-personal p, .contacto p, .datos-adicionales p, .experiencia p, .disponibilidad p {
+.info-personal p,
+.contacto p,
+.datos-adicionales p,
+.experiencia p,
+.disponibilidad p {
     margin: 5px 0;
     color: #333;
 }
 
-.experiencia p {
-    text-align: justify;
-    line-height: 1.5;
-}
-
-strong {
-    color: #0077cc;
-}
-
-.modal-voluntario .modal-card-body {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    border-radius: 8px;
-}
-.modal-voluntario .modal-card {
-    width: 80%;
-    max-width: 700px;
-    border-radius: 10px;
-    background: white;
-}
-.modal-voluntario .modal-background {
-    background-color: rgba(0, 0, 0, 0.2); /* Ajusta el último valor (0.5) para mayor o menor transparencia */
-}
-.modal-voluntario .button.is-success {
-    background-color: #000080 !important; 
-    border-color: #000080;
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-}
-
-.modal-voluntario .button.is-success:hover {
-    background-color: #333333 !important; 
-    
-}
-.modal-voluntario {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    justify-content: center;
-    align-items: center;
-}
 .modal-voluntario .info-personal,
 .modal-voluntario .contacto,
 .modal-voluntario .datos-adicionales,
@@ -688,55 +549,55 @@ strong {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Justificar el texto de experiencia */
-.modal-voluntario .experiencia p {
-    text-align: justify;
-    line-height: 1.5;
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border: 1px solid #000080;
+    border-radius: 2rem;
+    box-shadow: 0 8px 5px rgba(0, 0, 128, 0.25);
 }
 
-/* Resaltar títulos dentro del modal */
-.modal-voluntario strong {
-    color: #000080;
-}
-
-/* Ajustar tamaño y alineación del botón de cerrar */
-.modal-voluntario .modal-card-foot {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-}
-
-.modal-voluntario .modal-card-foot .button {
-    padding: 10px 20px;
-    font-weight: bold;
-}
-
-.modal-proyecto {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+.video-container video {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    justify-content: center;
-    align-items: center;
-}
-.modal-proyecto .modal-card {
-    width: 80%;
-    max-width: 700px;
-    border-radius: 10px;
-    background: white;
+    object-fit: cover;
 }
 
-/* Botón de cierre */
-.modal-proyecto .modal-card-foot {
+.ods-box {
+    border: 2px solid #000080;
+    height: 100%;
+    padding: 0;
+    box-shadow: 0 8px 8px rgba(0, 0, 128, 0.25);
+}
+
+.ods-box .columns {
+    padding: 1rem;
+}
+
+.modal-card {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.barraFiltros .filter-bar {
     display: flex;
-    justify-content: flex-end;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
 }
 
-.modal-proyecto .modal-card-foot .button {
-    padding: 10px 20px;
-    font-weight: bold;
+.barraFiltros .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.barraFiltros .dropdown-content {
+    border: solid 1px #000080;
+}
+
+.barraFiltros #Ordenar .dropdown-item:hover {
+    color: whitesmoke !important;
+    background-color: #000080 !important;
 }

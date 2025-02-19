@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="light">
+<html lang="es" data-theme="light">
 
 <head>
   <title>Voluntariado Cuatrovientos</title>
@@ -22,7 +22,7 @@
         <p class="modal-card-title has-text-centered">Inicio de Sesión</p>
         <label for="modalCheckboxInicio" class="delete" aria-label="close"></label>
       </header>
-      <section class="modal-card-body">
+      <div class="modal-card-body">
         <form action="./se_busca_admin.html" method="POST">
           <div class="field">
             <label class="label">Correo electrónico:</label>
@@ -40,7 +40,7 @@
             <button type="submit" class="button is-link is-fullwidth">Acceder</button>
           </div>
         </form>
-      </section>
+      </div>
     </div>
   </div>
 
@@ -50,7 +50,7 @@
         <p class="modal-card-title">Hazte voluntario/a y marca la diferencia!</p>
         <label for="modalCheckboxRegistro" class="delete" aria-label="close"></label>
       </header>
-      <section class="modal-card-body">
+      <div class="modal-card-body">
         <p class="intro-text">Envía tu candidatura para unirte a nuestro equipo de voluntariado,
           una vez revisado te enviaremos un correo electrónico con los pasos a seguir.</p>
         <form action="./index.html" method="POST">
@@ -119,7 +119,7 @@
 
           <div class="field">
             <label class="label">¿En qué año estas?*</label>
-            <div class="control" required>
+            <div class="control">
               <label class="radio">
                 <input type="radio" name="curso" value="si" required>
                 Primero
@@ -155,7 +155,7 @@
 
           <div class="field">
             <label class="label">¿Tienes coche propio?*</label>
-            <div class="control" required>
+            <div class="control">
               <label class="radio">
                 <input type="radio" name="coche" value="si" required>
                 Sí
@@ -188,7 +188,7 @@
 
           <div class="field">
             <label class="label">¿Estarías interesado/a en hacer voluntariado técnico?*</label>
-            <div class="control" required>
+            <div class="control">
               <label class="radio">
                 <input type="radio" name="voluntariado técnico" value="si" required>
                 Sí
@@ -216,11 +216,11 @@
             </div>
           </footer>
         </form>
-      </section>
+      </div>
     </div>
   </div>
 
-  <section class="hero is-light has-text-weight-bold">
+  <div class="hero is-light has-text-weight-bold">
     <div class="hero-head">
       <div class="navbar container">
         <div class="navbar-brand">
@@ -248,7 +248,7 @@
     </div>
 
     <div class="hero-footer">
-      <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+      <nav class="navbar is-light" aria-label="main navigation">
         <div class="container is-max-desktop">
           <div class="navbar-menu">
             <div class="navbar-item has-dropdown is-hoverable">
@@ -296,20 +296,22 @@
         </div>
       </nav>
     </div>
-  </section>
+  </div>
 
 
   <main>
-    <section id="quienes-somos" class="section">
-      <h1 class="title has-text-centered navy">¿Quiénes Somos?</h1>
+    <div id="quienes-somos" class="section">
+      <p class="title has-text-centered navy">¿Quiénes Somos?</p>
 
       <div class="container has-text-justified bordered-container vignette">
         <p>
-          Cuatrovientos somos un centro integrado especializado en formacion profesional con una creencia firme sobre la importancia del voluntariado como herramienta educativa y
+          Cuatrovientos somos un centro integrado especializado en formacion profesional con una creencia firme sobre la
+          importancia del voluntariado como herramienta educativa y
           transformadora. Organizamos una variedad de proyectos en los que nuestros estudiantes pueden participar, desde
-          campañas de recolección de alimentos hasta programas de asistencia a personas mayores. 
+          campañas de recolección de alimentos hasta programas de asistencia a personas mayores.
           Estas experiencias no solo nos permiten contribuir positivamente a la
-          sociedad, sino que también nos hace desarrollar habilidades esenciales como el trabajo en equipo, la comunicación y el liderazgo.
+          sociedad, sino que también nos hace desarrollar habilidades esenciales como el trabajo en equipo, la
+          comunicación y el liderazgo.
         </p>
         <p>
           Nuestro objetivo es crear un impacto duradero tanto en nuestros estudiantes como en la comunidad. A través del
@@ -322,7 +324,7 @@
         <div class="columns is-mobile has-background-info is-vcentered">
           <div class="column is-narrow">
             <figure class="image is-128x128">
-              <img class="is-rounded" src="./images/img_1.jpg" alt="Imagen relacionada" />
+              <img class="is-rounded" src="./images/img_1.jpg" alt="Imagen relacionada">
             </figure>
           </div>
           <div class="column has-text-justified">
@@ -347,14 +349,14 @@
           </div>
           <div class="column is-narrow">
             <figure class="image is-128x128">
-              <img class="is-rounded" src="./images/ICONO4V.png" alt="Imagen relacionada" />
+              <img class="is-rounded" src="./images/ICONO4V.png" alt="Imagen relacionada">
             </figure>
           </div>
         </div>
         <div class="columns is-mobile has-background-info is-vcentered">
           <div class="column is-narrow">
             <figure class="image is-128x128">
-              <img class="is-rounded" src="./images/img_3.jpg" alt="Imagen relacionada" />
+              <img class="is-rounded" src="./images/img_3.jpg" alt="Imagen relacionada">
             </figure>
           </div>
           <div class="column has-text-justified">
@@ -380,16 +382,16 @@
           </div>
           <div class="column is-narrow">
             <figure class="image is-128x128">
-              <img class="is-rounded" src="./images/img_4.jpg" alt="Imagen relacionada" />
+              <img class="is-rounded" src="./images/img_4.jpg" alt="Imagen relacionada">
             </figure>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="que-hacemos" class="section">
+    <div id="que-hacemos" class="section">
       <div class="container">
-        <h1 class="title has-text-centered navy">¿Qué Hacemos?</h1>
+        <p class="title has-text-centered navy">¿Qué Hacemos?</p>
         <div class="columns">
           <div class="column">
             <div class="box image-container">
@@ -423,139 +425,149 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="ods" class="section">
+    <div id="ods" class="section">
       <div class="container">
         <div class="container has-text-centered bordered-container vignette">
           <p>
             El Voluntariado en Cuatrovientos no solo tiene una finalidad educativa, sino que también busca contribuir al
             cumplimiento de los Objetivos de Desarrollo Sostenible (ODS) de la ONU. Estos objetivos son una guía para la
-            acción global en áreas como la pobreza, la educación, la igualdad de género, la salud y el medio ambiente. <br>
+            acción global en áreas como la pobreza, la educación, la igualdad de género, la salud y el medio ambiente.
+            <br>
             A continuación se presentan algunos de los ODS que guían nuestro trabajo:
           </p>
         </div>
 
-          <div class="columns is-multiline">
-              <div class="column is-half">
-                  <div class="box ods-box has-background-white  ">
-                      <div class="columns ods-content is-mobile">
-                          <div class="column is-one-third">
-                              <figure class="image">
-                                  <img src="./images/ODS1.png" alt="ODS 1: Fin de la pobreza">
-                              </figure>
-                          </div>
-                          <div class="column ">
-                              <h3 class="title is-5 navy  ">ODS 1: Fin de la pobreza</h3>
-                              <p class="has-text-grey-darker  ">Busca erradicar la pobreza en todas sus formas y en todo el mundo, garantizando acceso a recursos básicos como alimentación, salud y educación.</p>
-                          </div>
-                      </div>
-                  </div>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <div class="box ods-box has-background-white  ">
+              <div class="columns ods-content is-mobile">
+                <div class="column is-one-third">
+                  <figure class="image">
+                    <img src="./images/ODS1.png" alt="ODS 1: Fin de la pobreza">
+                  </figure>
+                </div>
+                <div class="column ">
+                  <h3 class="title is-5 navy  ">ODS 1: Fin de la pobreza</h3>
+                  <p class="has-text-grey-darker  ">Busca erradicar la pobreza en todas sus formas y en todo el mundo,
+                    garantizando acceso a recursos básicos como alimentación, salud y educación.</p>
+                </div>
               </div>
-
-              <div class="column is-half">
-                  <div class="box ods-box has-background-white  ">
-                      <div class="columns ods-content is-mobile">
-                          <div class="column is-one-third">
-                              <figure class="image">
-                                  <img src="./images/ODS2.png" alt="ODS 2: Hambre cero">
-                              </figure>
-                          </div>
-                          <div class="column">
-                              <h3 class="title is-5 navy  ">ODS 2: Hambre cero</h3>
-                              <p class="has-text-grey-darker  ">Pretende acabar con el hambre y la desnutrición mediante sistemas alimentarios sostenibles, promoviendo la agricultura y el acceso a alimentos nutritivos.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              
-              <div class="column is-half">
-                  <div class="box ods-box has-background-white  ">
-                      <div class="columns ods-content is-mobile">
-                          <div class="column is-one-third">
-                              <figure class="image">
-                                  <img src="./images/ODS3.png" alt="ODS 3: Salud y bienestar">
-                              </figure>
-                          </div>
-                          <div class="column">
-                              <h3 class="title is-5 navy  ">ODS 3: Salud y bienestar</h3>
-                              <p class="has-text-grey-darker  ">Asegura una vida saludable y promueve el bienestar para todas las edades, abordando enfermedades, atención médica y acceso a medicamentos esenciales.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="column is-half">
-                  <div class="box ods-box has-background-white  ">
-                      <div class="columns ods-content is-mobile">
-                          <div class="column is-one-third">
-                              <figure class="image">
-                                  <img src="./images/ODS5.png" alt="ODS 5: Igualdad de genero">
-                              </figure>
-                          </div>
-                          <div class="column">
-                              <h3 class="title is-5 navy  ">ODS 5: Igualdad de genero</h3>
-                              <p class="has-text-grey-darker  "> Busca eliminar la discriminación y violencia de género, promoviendo la participación equitativa de mujeres y niñas en todos los ámbitos.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="column is-half">
-                  <div class="box ods-box has-background-white  ">
-                      <div class="columns ods-content is-mobile">
-                          <div class="column is-one-third">
-                              <figure class="image">
-                                  <img src="./images/ODS9.png" alt="ODS 9: Industria, Innovación e Infraestructura">
-                              </figure>
-                          </div>
-                          <div class="column">
-                              <h3 class="title is-5 navy  ">ODS 9: Industria, Innovación e Infraestructura </h3>
-                              <p class="has-text-grey-darker  "> Impulsa el desarrollo de infraestructuras resilientes, la industrialización inclusiva y la innovación para el crecimiento económico sostenible.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="column is-half">
-                  <div class="box ods-box has-background-white  ">
-                      <div class="columns ods-content is-mobile">
-                          <div class="column is-one-third">
-                              <figure class="image">
-                                  <img src="./images/ODS14.png" alt="ODS 14: Vida Submarina">
-                              </figure>
-                          </div>
-                          <div class="column">
-                              <h3 class="title is-5 navy  ">ODS 14: Vida Submarina </h3>
-                              <p class="has-text-grey-darker  "> Protege los océanos y la biodiversidad marina, reduciendo la contaminación y promoviendo el uso sostenible de los recursos acuáticos.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="column is-half">
-                  <div class="box ods-box has-background-white  ">
-                      <div class="columns ods-content is-mobile">
-                          <div class="column is-one-third">
-                              <figure class="image">
-                                  <img src="./images/ODS17.png" alt="ODS 14: Vida Submarina">
-                              </figure>
-                          </div>
-                          <div class="column">
-                              <h3 class="title is-5 navy  ">ODS 17: Alianzas para lograr objetivos </h3>
-                              <p class="has-text-grey-darker  "> Fomenta la cooperación global entre gobiernos, sector privado y sociedad civil para movilizar recursos y cumplir con los ODS de manera efectiva.</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+            </div>
           </div>
-      </div>
-  </section>
 
-    <section id="preguntas-frecuentes" class="section is-medium">
-      <h1 class="title has-text-centered navy">Preguntas Frecuentes</h1>
+          <div class="column is-half">
+            <div class="box ods-box has-background-white  ">
+              <div class="columns ods-content is-mobile">
+                <div class="column is-one-third">
+                  <figure class="image">
+                    <img src="./images/ODS2.png" alt="ODS 2: Hambre cero">
+                  </figure>
+                </div>
+                <div class="column">
+                  <h3 class="title is-5 navy  ">ODS 2: Hambre cero</h3>
+                  <p class="has-text-grey-darker  ">Pretende acabar con el hambre y la desnutrición mediante sistemas
+                    alimentarios sostenibles, promoviendo la agricultura y el acceso a alimentos nutritivos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-half">
+            <div class="box ods-box has-background-white  ">
+              <div class="columns ods-content is-mobile">
+                <div class="column is-one-third">
+                  <figure class="image">
+                    <img src="./images/ODS3.png" alt="ODS 3: Salud y bienestar">
+                  </figure>
+                </div>
+                <div class="column">
+                  <h3 class="title is-5 navy  ">ODS 3: Salud y bienestar</h3>
+                  <p class="has-text-grey-darker  ">Asegura una vida saludable y promueve el bienestar para todas las
+                    edades, abordando enfermedades, atención médica y acceso a medicamentos esenciales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="box ods-box has-background-white  ">
+              <div class="columns ods-content is-mobile">
+                <div class="column is-one-third">
+                  <figure class="image">
+                    <img src="./images/ODS5.png" alt="ODS 5: Igualdad de genero">
+                  </figure>
+                </div>
+                <div class="column">
+                  <h3 class="title is-5 navy  ">ODS 5: Igualdad de genero</h3>
+                  <p class="has-text-grey-darker  "> Busca eliminar la discriminación y violencia de género, promoviendo
+                    la participación equitativa de mujeres y niñas en todos los ámbitos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="box ods-box has-background-white  ">
+              <div class="columns ods-content is-mobile">
+                <div class="column is-one-third">
+                  <figure class="image">
+                    <img src="./images/ODS9.png" alt="ODS 9: Industria, Innovación e Infraestructura">
+                  </figure>
+                </div>
+                <div class="column">
+                  <h3 class="title is-5 navy  ">ODS 9: Industria, Innovación e Infraestructura </h3>
+                  <p class="has-text-grey-darker  "> Impulsa el desarrollo de infraestructuras resilientes, la
+                    industrialización inclusiva y la innovación para el crecimiento económico sostenible.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="box ods-box has-background-white  ">
+              <div class="columns ods-content is-mobile">
+                <div class="column is-one-third">
+                  <figure class="image">
+                    <img src="./images/ODS14.png" alt="ODS 14: Vida Submarina">
+                  </figure>
+                </div>
+                <div class="column">
+                  <h3 class="title is-5 navy  ">ODS 14: Vida Submarina </h3>
+                  <p class="has-text-grey-darker  "> Protege los océanos y la biodiversidad marina, reduciendo la
+                    contaminación y promoviendo el uso sostenible de los recursos acuáticos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="box ods-box has-background-white  ">
+              <div class="columns ods-content is-mobile">
+                <div class="column is-one-third">
+                  <figure class="image">
+                    <img src="./images/ODS17.png" alt="ODS 14: Vida Submarina">
+                  </figure>
+                </div>
+                <div class="column">
+                  <h3 class="title is-5 navy  ">ODS 17: Alianzas para lograr objetivos </h3>
+                  <p class="has-text-grey-darker  "> Fomenta la cooperación global entre gobiernos, sector privado y
+                    sociedad civil para movilizar recursos y cumplir con los ODS de manera efectiva.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="preguntas-frecuentes" class="section is-medium">
+      <p class="title has-text-centered navy">Preguntas Frecuentes</p>
       <div class="container">
         <details class="box has-background-info">
           <summary class="title is-5 has-text-white">¿Qué es Voluntariado Cuatrovientos?</summary>
           <div class="content has-text-justified">
             <p class="has-text-white">
-              Voluntariado Cuatro Vientos es una organización dedicada a promover la solidaridad y el apoyo comunitario a través de diversas iniciativas y proyectos de voluntariado.
+              Voluntariado Cuatro Vientos es una organización dedicada a promover la solidaridad y el apoyo comunitario
+              a
+              través de diversas iniciativas y proyectos de voluntariado.
             </p>
           </div>
         </details>
@@ -563,15 +575,18 @@
           <summary class="title is-5 has-text-white">¿Cómo puedo hacerme voluntario/a?</summary>
           <div class="content has-text-justified">
             <p class="has-text-white">
-              Para hacerte voluntario/a existe una opción en la parte superior de nuestra página web donde solamente necesitas rellenar un formulario para enviar tu candidatura.
+              Para hacerte voluntario/a existe una opción en la parte superior de nuestra página web donde solamente
+              necesitas rellenar un formulario para enviar tu candidatura.
             </p>
           </div>
         </details>
         <details class="box has-background-info">
-          <summary class="title is-5 has-text-white">¿Qué tipo de proyectos realiza Voluntariado Cuatrovientos?</summary>
+          <summary class="title is-5 has-text-white">¿Qué tipo de proyectos realiza Voluntariado Cuatrovientos?
+          </summary>
           <div class="content has-text-justified">
             <p class="has-text-white">
-              Realizamos proyectos en diversas áreas como apoyo escolar, voluntariado en hospitales, comedores sociales, refugios de animales, y centros de mayores, entre otros.
+              Realizamos proyectos en diversas áreas como apoyo escolar, voluntariado en hospitales, comedores sociales,
+              refugios de animales, y centros de mayores, entre otros.
             </p>
           </div>
         </details>
@@ -579,7 +594,8 @@
           <summary class="title is-5 has-text-white">¿Qué requisitos debo cumplir para ser voluntario/a?</summary>
           <div class="content has-text-justified">
             <p class="has-text-white">
-              Los requisitos pueden variar según el proyecto, pero generalmente se requiere ser mayor de edad, tener disponibilidad de tiempo y un compromiso con los valores de la organización.
+              Los requisitos pueden variar según el proyecto, pero generalmente se requiere ser mayor de edad, tener
+              disponibilidad de tiempo y un compromiso con los valores de la organización.
             </p>
           </div>
         </details>
@@ -587,15 +603,21 @@
           <summary class="title is-5 has-text-white">¿Cómo se seleccionan los proyectos de voluntariado?</summary>
           <div class="content has-text-justified">
             <p class="has-text-white">
-              Los proyectos de voluntariado se seleccionan en base a las necesidades de la comunidad y la disponibilidad de recursos y voluntarios. Puedes ver los proyectos pendientes en la sección correspondiente de nuestra web.
+              Los proyectos de voluntariado se seleccionan en base a las necesidades de la comunidad y la disponibilidad
+              de recursos y voluntarios. Puedes ver los proyectos pendientes en la sección correspondiente de nuestra
+              web.
             </p>
           </div>
         </details>
         <details class="box has-background-info">
-          <summary class="title is-5 has-text-white">¿Dónde puedo encontrar noticias y actualizaciones sobre Voluntariado Cuatrovientos?</summary>
+          <summary class="title is-5 has-text-white">¿Dónde puedo encontrar noticias y actualizaciones sobre
+            Voluntariado
+            Cuatrovientos?</summary>
           <div class="content has-text-justified">
             <p class="has-text-white">
-              Puedes encontrar noticias y actualizaciones en la sección "Noticias" de nuestra página web, donde publicamos información sobre eventos, proyectos y actividades recientes.
+              Puedes encontrar noticias y actualizaciones en la sección "Noticias" de nuestra página web, donde
+              publicamos
+              información sobre eventos, proyectos y actividades recientes.
             </p>
           </div>
         </details>
@@ -603,7 +625,8 @@
           <summary class="title is-5 has-text-white">¿Qué apoyo reciben los voluntarios/as?</summary>
           <div class="content has-text-justified">
             <p class="has-text-white">
-              Los voluntarios/as reciben formación, recursos y apoyo continuo por parte de la organización para asegurar que puedan realizar su labor de manera efectiva y satisfactoria.
+              Los voluntarios/as reciben formación, recursos y apoyo continuo por parte de la organización para asegurar
+              que puedan realizar su labor de manera efectiva y satisfactoria.
             </p>
           </div>
         </details>
@@ -611,19 +634,19 @@
           <summary class="title is-5 has-text-white">¿Cómo puedo contactar con Voluntariado Cuatrovientos?</summary>
           <div class="content has-text-justified">
             <p class="has-text-white">
-              Puedes contactar con nosotros a través del formulario de contacto en nuestra página web o enviando un correo electrónico a voluntariado@cuatrovientos.org
+              Puedes contactar con nosotros a través del formulario de contacto en nuestra página web o enviando un
+              correo
+              electrónico a voluntariado@cuatrovientos.org
             </p>
           </div>
         </details>
       </div>
-    </section>
-    
-
+    </div>
   </main>
 
-  <section>
+  <div>
     <a href="#top" id="backToTop" class="back-to-top">↑</a>
-  </section>
+  </div>
 
   <footer class="footer">
     <div class="columns">
@@ -680,8 +703,8 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.299505832556!2d-1.6624343878483154!3d42.82428680552595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5092855cefdac7%3A0xab7c62765f5209e2!2sCuatrovientos%20Centro%20Integrado!5e0!3m2!1ses!2ses!4v1738586548208!5m2!1ses!2ses"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+    </div>
   </footer>
-
 
 </body>
 

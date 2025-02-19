@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="light">
+<html lang="es" data-theme="light">
 
 <head>
     <title>Voluntariado Cuatrovientos</title>
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section class="hero is-light has-text-weight-bold">
+    <header class="hero is-light has-text-weight-bold">
         <div class="hero-head">
             <div class="navbar container">
                 <div class="navbar-brand">
@@ -27,30 +27,30 @@
                 </div>
                 <div class="navbar-menu">
                     <div class="navbar-end">
-                      <div class="navbar-item">
-                        <div class="card-content perfil">
-                          <div class="media">
-                            <div class="media-left">
-                              <figure class="image is-48x48px">
-                                <img class="is-rounded" src="./images/FOTO-PERFIL.png" />
-                              </figure>
+                        <div class="navbar-item">
+                            <div class="card-content perfil">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48px">
+                                            <img class="is-rounded" src="./images/FOTO-PERFIL.png" alt="Foto perfil de usuario">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-6">Ana Martín Perez</p>
+                                        <p class="subtitle is-7 rol-perfil">Coordinador/a |
+                                            <a class="subtitle is-7" href="./index.html"> Cerrar sesión</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="media-content">
-                              <p class="title is-6">Ana Martín Perez</p>
-                              <p class="subtitle is-7 rol-perfil">Coordinador/a |
-                                <a class="subtitle is-7" href="./index.html"> Cerrar sesión</a>
-                              </p>
-                            </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
 
         <div class="hero-footer">
-            <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-light" aria-label="main navigation">
                 <div class="container is-max-desktop">
                     <div class="navbar-menu">
                         <div class="navbar-item has-dropdown is-hoverable">
@@ -127,14 +127,15 @@
                 </div>
             </nav>
         </div>
-    </section>
-    <main>
-        <section id="actualidad" class="section">
+    </header>
+    
+    <main class="has-background-white">
+        <div id="actualidad" class="section">
             <div class="container">
-                <nav class="level">
+                <div class="level">
                     <div class="level-left">
                         <div class="level-item">
-                            <h1 class="title has-text-black-bis">Gestión de proyectos</h1>
+                            <p class="title has-text-black-bis">Gestión de proyectos</p>
                         </div>
                     </div>
                     <div class="level-right">
@@ -145,16 +146,16 @@
                             </div>
                         </div>
                     </div>
-                </nav>
+                </div>
             </div>
-        </section>
-        <section class="section">
+        </div>
+        <div class="section">
             <div class="container">
                 <h1 class="title has-text-centered navy">Proyectos en curso</h1>
-        
-        
-        
-        
+
+
+
+
                 <div class="container barraFiltros">
                     <div class="field">
                         <div class="control has-icons-left">
@@ -164,7 +165,7 @@
                             </span>
                         </div>
                     </div>
-        
+
                     <div class="filter-bar">
                         <div class="dropdown ">
                             <div class="dropdown-trigger">
@@ -195,22 +196,21 @@
                                 </div>
                                 <div class="dropdown-item">
                                     <label class="label">Participantes:</label>
-                                    <input class="input" type="number" placeholder="Número total" min="0"
-                                        required>
+                                    <input class="input" type="number" placeholder="Número total" min="0" required>
                                 </div>
                                 <div class="dropdown-item">
                                     <label class="label">Estado:</label>
                                     <label class="radio">
-                                      <input type="radio" name="answer" />
-                                      Activo
+                                        <input type="radio" name="answer">
+                                        Activo
                                     </label>
                                     <label class="radio">
-                                      <input type="radio" name="answer" />
-                                      Archivado
+                                        <input type="radio" name="answer">
+                                        Archivado
                                     </label>
-                                  </div>
+                                </div>
                                 <div class="dropdown-item">
-                                    <button class="button is-link is-fullwidth" href="#">Aplicar Filtros</button>
+                                    <a href="#" class="button is-link is-fullwidth">Aplicar Filtros</a>
                                 </div>
                             </div>
                         </div>
@@ -241,9 +241,9 @@
                                 <div class="card-content">
                                     <p class="title is-5">
                                         <i class="fa-solid fa-book-open has-text-primary"></i> Apoyo Escolar
-        
+
                                     </p>
-        
+
                                     <p class="subtitle is-6">
                                         <i class="fa-solid fa-user has-text-info"></i> Responsable: Juan Dominguez
                                     </p>
@@ -251,20 +251,21 @@
                                         <i class="fa-solid fa-calendar has-text-primary"></i> Fecha actividad: 10 de
                                         febrero
                                     </p>
-        
+
                                     <p>
                                         <i class="fa-solid fa-thumbtack has-text-danger"></i> Estado: <span
                                             class="tag is-info">Activo</span>
-                                        <label for="modalCheckboxProyecto1"
+                                        <label for="modalCheckboxProyectoInfo1"
                                             class="button is-info is-small is-light has-text-weight-bold ml-2">
                                             <span class="icon"><i class="fas fa-info-circle"></i></span>
                                             <span>Ver Información</span>
                                         </label>
                                     </p>
-        
+
                                 </div>
                                 <footer class="card-footer">
-                                    <label for="modalCheckboxMiembros1" class="card-footer-item button is-success is-light">
+                                    <label for="modalCheckboxProyectoMiembros1"
+                                        class="card-footer-item button is-success is-light">
                                         <i class="fa-solid fa-user mr-2"></i> Administrar miembros
                                     </label>
                                     <button class="card-footer-item button is-danger is-light">
@@ -273,77 +274,93 @@
                                 </footer>
                             </div>
                         </div>
-        
-                        <input type="checkbox" id="modalCheckboxMiembros1" class="modal-checkbox" hidden>
-        
-                        <div class="modal">
+
+                        <input type="checkbox" id="modalCheckboxProyectoMiembros1" class="modal-checkbox" hidden>
+
+                        <div class="modal" id="ProyectoMiembros1">
                             <div class="modal-background"></div>
                             <div class="modal-card">
                                 <header class="modal-card-head">
                                     <p class="modal-card-title">Administrar Miembros</p>
-                                    <label for="modalCheckboxMiembros1" class="delete" aria-label="close"></label>
+                                    <label for="modalCheckboxProyectoMiembros1" class="delete"
+                                        aria-label="close"></label>
                                 </header>
-                                <section class="modal-card-body">
-                                    <div class="field">
-                                        <label class="label">Añadir voluntario</label>
-                                        <div class="control">
-                                            <div class="select">
-                                                <select>
-                                                    <option>Seleccionar usuario</option>
-                                                    <option>Juan Pérez</option>
-                                                    <option>María López</option>
-                                                </select>
+                                <div class="modal-card-body">
+                                    <div class="columns">
+                                        <div class="column">
+                                            <label class="label navy">Voluntarios en el proyecto</label>
+                                            <div class="box">
+                                                <ul id="userList">
+                                                    <li>Rafa Mora</li>
+                                                    <li>Peter Smith</li>
+                                                    <li>Alejadra De Lope</li>
+                                                </ul>
+                                            </div>
+                                            <p><span class="has-text-weight-bold navy">Plazas totales:</span> 3</p>
+                                        </div>
+                                        <div class="column">
+                                            <div class="field">
+                                                <label class="label">Añadir voluntario</label>
+                                                <div class="control">
+                                                    <div class="select">
+                                                        <select>
+                                                            <option>Seleccionar usuario</option>
+                                                            <option>Juan Pérez</option>
+                                                            <option>María López</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="label">Eliminar voluntario</label>
+                                                <div class="control">
+                                                    <div class="select">
+                                                        <select>
+                                                            <option>Seleccionar usuario</option>
+                                                            <option>Alejandra De Lope</option>
+                                                            <option>Peter Smith</option>
+                                                            <option>Rafa Mora</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="field">
-                                        <label class="label">Eliminar voluntario</label>
-                                        <div class="control">
-                                            <div class="select">
-                                                <select>
-                                                    <option>Seleccionar usuario</option>
-                                                    <option>Juan Pérez</option>
-                                                    <option>María López</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
+                                </div>
                                 <footer class="modal-card-foot">
                                     <button class="button is-link">Guardar</button>
-                                    <label for="modalCheckboxMiembros1" class="button">Cancelar</label>
+                                    <label id="modalCheckboxMiembros1" class="button">Cancelar</label>
                                 </footer>
                             </div>
                         </div>
-        
-                        <input type="checkbox" id="modalInfoProyecto1" class="is-hidden">
-                        <input type="checkbox" id="modalCheckboxProyecto1" class="modal-checkbox is-hidden">
-        
-        
-                        <div class="modal modal-proyecto" id="modalInfo1">
+
+
+                        <input type="checkbox" id="modalCheckboxProyectoInfo1" class="is-hidden">
+
+                        <div class="modal modal-proyecto" id="ProyectoInfo1">
                             <div class="modal-background"></div>
                             <div class="modal-card">
                                 <header class="modal-card-head">
                                     <p class="modal-card-title">Información del Proyecto</p>
-                                    <label for="modalCheckboxProyecto1" class="delete" aria-label="close"></label>
+                                    <label for="modalCheckboxProyectoInfo1" class="delete" aria-label="close"></label>
                                 </header>
-                                <section class="modal-card-body">
+                                <div class="modal-card-body">
                                     <p><span class="has-text-weight-bold">Nombre:</span> Apoyo Escolar</p>
                                     <p><span class="has-text-weight-bold">Responsable:</span> Juan Domínguez</p>
                                     <p><span class="has-text-weight-bold">Fecha propuesta:</span> 10 de febrero</p>
                                     <p><span class="has-text-weight-bold">Nº voluntarios:</span> 3</p>
                                     <p><span class="has-text-weight-bold">Descripción:</span> Se necesitan voluntarios
                                         para ayudar a estudiantes con dificultades académicas.</p>
-                                </section>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        </main>
+        </div>
+    </main>
 
-    <section class="section">
+    <div class="section">
         <div class="pagination" role="navigation" aria-label="pagination">
             <a class="pagination-previous is-disabled" title="This is the first page">Previous</a>
             <a href="#" class="pagination-next">Next page</a>
@@ -359,11 +376,11 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </div>
 
-    <section>
+    <div>
         <a href="#top" id="backToTop" class="back-to-top">↑</a>
-    </section>
+    </div>
 
     <footer class="footer">
         <div class="columns">
@@ -423,5 +440,4 @@
         </div>
     </footer>
 </body>
-
 </html>

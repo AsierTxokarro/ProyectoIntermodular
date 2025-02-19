@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="light">
+<html lang="es" data-theme="light">
 
 <head>
     <title>Voluntariado Cuatrovientos</title>
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section class="hero is-light has-text-weight-bold">
+    <div class="hero is-light has-text-weight-bold">
         <div class="hero-head">
             <div class="navbar container">
                 <div class="navbar-brand">
@@ -27,30 +27,30 @@
                 </div>
                 <div class="navbar-menu">
                     <div class="navbar-end">
-                      <div class="navbar-item">
-                        <div class="card-content perfil">
-                          <div class="media">
-                            <div class="media-left">
-                              <figure class="image is-48x48px">
-                                <img class="is-rounded" src="./images/FOTO-PERFIL.png" />
-                              </figure>
+                        <div class="navbar-item">
+                            <div class="card-content perfil">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48px">
+                                            <img class="is-rounded" src="./images/FOTO-PERFIL.png" alt="Foto perfil de usuario">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-6">Ana Martín Perez</p>
+                                        <p class="subtitle is-7 rol-perfil">Coordinador/a |
+                                            <a class="subtitle is-7" href="./index.html"> Cerrar sesión</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="media-content">
-                              <p class="title is-6">Ana Martín Perez</p>
-                              <p class="subtitle is-7 rol-perfil">Coordinador/a |
-                                <a class="subtitle is-7" href="./index.html"> Cerrar sesión</a>
-                              </p>
-                            </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
 
         <div class="hero-footer">
-            <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-light" aria-label="main navigation">
                 <div class="container is-max-desktop">
                     <div class="navbar-menu">
                         <div class="navbar-item has-dropdown is-hoverable">
@@ -127,15 +127,15 @@
                 </div>
             </nav>
         </div>
-    </section>
+    </div>
 
- <main>
-        <section class="section">
+    <main class="has-background-white">
+        <div class="section">
             <div class="container">
                 <nav class="level">
                     <div class="level-left">
                         <div class="level-item">
-                            <h1 class="title has-text-black-bis">Gestión de voluntariado</h1>
+                            <p class="title has-text-black-bis">Gestión de voluntariado</p>
                         </div>
                     </div>
                     <div class="level-right">
@@ -148,207 +148,221 @@
                     </div>
                 </nav>
             </div>
-        </section>
-        <section class="section">
+        </div>
+        <div class="section">
             <div class="container">
                 <h1 class="title has-text-centered navy">Voluntarios activos</h1>
 
                 <div class="container barraFiltros">
                     <div class="field">
-                      <div class="control has-icons-left">
-                        <input class="input" type="text" placeholder="Buscar proyectos..." id="searchInput">
-                        <span class="icon is-left has-text-primary">
-                          <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                      </div>
-                    </div>
-                  
-                    <div class="filter-bar">
-                      <div class="dropdown ">
-                        <div class="dropdown-trigger">
-                          <button class="button is-link has-text-white " aria-haspopup="true" aria-controls="dropdown-menu">
-                            <span>Filtrar por</span>
-                            <span class="icon is-small">
-                              <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" placeholder="Buscar proyectos..." id="searchInput">
+                            <span class="icon is-left has-text-primary">
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </span>
-                          </button>
                         </div>
-                        <div class="dropdown-menu dropdown-content" id="dropdown-menu" role="menu">
-                          <div class="dropdown-item">
-                            <label class="label">Disponibilidad:</label>
-                            <div class="select">
-                              <select>
-                                <option value="Todos">Todos</option>
-                                <option value="1-2">1-2 horas</option>
-                                <option value="3-4">3-4 horas</option>
-                                <option value="+5">+5 horas</option>
-                                <option value="Talleres puntuales">Talleres puntuales</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="dropdown-item">
-                            <label class="label">Ciclo del voluntario:</label>
-                            <div class="select">
-                              <select>
-                                <option value="Todos">Todos</option>
-                                <option value="CFS Administración y Finanzas DUAL">CFS Administración y Finanzas
-                                  DUAL</option>
-                                <option value="CFS Comercio Internacional DUAL BILINGÜE">CFS Comercio Internacional
-                                  DUAL BILINGÜE
-                                </option>
-                                <option value="CFS Gestión de Ventas y Espacios Comerciales DUAL">CFS Gestión de
-                                  Ventas y Espacios
-                                  Comerciales DUAL</option>
-                                <option value="CFS Transporte y Logística DUAL">CFS Transporte y Logística DUAL
-                                </option>
-                                <option value="CFS Transporte y Logística Virtual">CFS Transporte y Logística
-                                  Virtual</option>
-                                <option value="CFS Administración de Sistemas Informáticos en Red DUAL">CFS
-                                  Administración de Sistemas
-                                  Informáticos en Red DUAL</option>
-                                <option value="CFS Desarrollo de Aplicaciones Multiplataforma DUAL">CFS Desarrollo
-                                  de Aplicaciones
-                                  Multiplataforma DUAL</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="dropdown-item">
-                            <label class="label">Curso:</label>
-                            <label class="radio">
-                              <input type="radio" name="answer" />
-                              Primero
-                            </label>
-                            <label class="radio">
-                              <input type="radio" name="answer" />
-                              Segundo
-                            </label>
-                          </div>
-                          <div class="dropdown-item">
-                            <label class="label">Coche propio:</label>
-                            <label class="radio">
-                              <input type="radio" name="answer" />
-                              Si
-                            </label>
-                            <label class="radio">
-                              <input type="radio" name="answer" />
-                              No
-                            </label>
-                          </div>
-                          <div class="dropdown-item">
-                            <button class="button is-link is-fullwidth" onclick="applyFilters()">Aplicar
-                              Filtros</button>
-                          </div>
-                  
-                        </div>
-                      </div>
-                      <div class="dropdown is-right" id="Ordenar">
-                        <div class="dropdown-trigger">
-                          <button class="button is-link has-text-white" aria-haspopup="true" aria-controls="dropdown-order-menu">
-                            <span>Orden</span>
-                            <span class="icon is-small">
-                              <i class="fas fa-angle-down" aria-hidden="true"></i>
-                            </span>
-                          </button>
-                        </div>
-                        <div class="dropdown-menu dropdown-content" id="dropdown-order-menu" role="menu">
-                          <div>
-                            <a href="#" class="dropdown-item">Ascendente</a>
-                            <a href="#" class="dropdown-item">Descendente</a>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
 
-                  <div class="container">
+                    <div class="filter-bar">
+                        <div class="dropdown ">
+                            <div class="dropdown-trigger">
+                                <button class="button is-link has-text-white " aria-haspopup="true"
+                                    aria-controls="dropdown-menu">
+                                    <span class="has-text-weight-bold">Filtrar por</span>
+                                    <span class="icon is-small">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="dropdown-menu dropdown-content" id="dropdown-menu" role="menu">
+                                <div class="dropdown-item">
+                                    <label class="label">Disponibilidad:</label>
+                                    <div class="select">
+                                        <select>
+                                            <option value="Todos">Todos</option>
+                                            <option value="1-2">1-2 horas</option>
+                                            <option value="3-4">3-4 horas</option>
+                                            <option value="+5">+5 horas</option>
+                                            <option value="Talleres puntuales">Talleres puntuales</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item">
+                                    <label class="label">Ciclo del voluntario:</label>
+                                    <div class="select">
+                                        <select>
+                                            <option value="Todos">Todos</option>
+                                            <option value="CFS Administración y Finanzas DUAL">CFS Administración y
+                                                Finanzas
+                                                DUAL</option>
+                                            <option value="CFS Comercio Internacional DUAL BILINGÜE">CFS Comercio
+                                                Internacional
+                                                DUAL BILINGÜE
+                                            </option>
+                                            <option value="CFS Gestión de Ventas y Espacios Comerciales DUAL">CFS
+                                                Gestión de
+                                                Ventas y Espacios
+                                                Comerciales DUAL</option>
+                                            <option value="CFS Transporte y Logística DUAL">CFS Transporte y Logística
+                                                DUAL
+                                            </option>
+                                            <option value="CFS Transporte y Logística Virtual">CFS Transporte y
+                                                Logística
+                                                Virtual</option>
+                                            <option value="CFS Administración de Sistemas Informáticos en Red DUAL">CFS
+                                                Administración de Sistemas
+                                                Informáticos en Red DUAL</option>
+                                            <option value="CFS Desarrollo de Aplicaciones Multiplataforma DUAL">CFS
+                                                Desarrollo
+                                                de Aplicaciones
+                                                Multiplataforma DUAL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="dropdown-item">
+                                    <label class="label">Curso:</label>
+                                    <label class="radio">
+                                        <input type="radio" name="answer">
+                                        Primero
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="answer">
+                                        Segundo
+                                    </label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <label class="label">Coche propio:</label>
+                                    <label class="radio">
+                                        <input type="radio" name="answer">
+                                        Si
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="answer">
+                                        No
+                                    </label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <button class="button is-link is-fullwidth" onclick="applyFilters()">Aplicar
+                                        Filtros</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="dropdown is-right" id="Ordenar">
+                            <div class="dropdown-trigger">
+                                <button class="button is-link has-text-white" aria-haspopup="true"
+                                    aria-controls="dropdown-order-menu">
+                                    <span class="has-text-weight-bold">Orden</span>
+                                    <span class="icon is-small">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="dropdown-menu dropdown-content" id="dropdown-order-menu" role="menu">
+                                <div>
+                                    <a href="#" class="dropdown-item">Ascendente</a>
+                                    <a href="#" class="dropdown-item">Descendente</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
                     <div class="columns is-multiline">
                         <div class="column is-4">
                             <div class="card">
                                 <div class="card-content">
                                     <p class="title is-5">
                                         <i class="fa-solid fa-user has-text-info"></i> Eliam Lopez Garrido
-                                        <label for="modalCheckboxInfoVoluntario1" class="button is-info is-small is-light has-text-weight-bold ml-2">
+                                        <label for="modalCheckboxInfoVoluntario1"
+                                            class="button is-info is-small is-light has-text-weight-bold ml-2">
                                             <span class="icon">
                                                 <i class="fas fa-info-circle"></i>
                                             </span>
-                                            <span>Ver Info</span>
+                                            <span class="has-text-weight-bold">Ver Información</span>
                                         </label>
                                     </p>
                                     <p>
                                         <i class="fa-solid fa-thumbtack has-text-danger"></i> Rol :
-                                        <span class="tag is-warning">Voluntario</span>
+                                        <span class="tag is-link">Voluntario</span>
                                     </p>
                                 </div>
                                 <footer class="card-footer">
                                     <label for="modalCheckboxHistoVoluntario1" class="button is-link mt-2">
                                         <i class="fa-solid fa-clock-rotate-left mr-2"></i> Ver Historial
                                     </label>
-                                    <label for="modalCheckboxContactoVoluntario1" class="button is-danger is-light mt-2">
+                                    <label for="modalCheckboxContactoVoluntario1"
+                                        class="button is-danger is-light mt-2">
                                         <i class="fa-solid fa-envelope mr-2"></i> Contactar
                                     </label>
                                 </footer>
                             </div>
                         </div>
-               
+
                         <div class="column is-4">
                             <div class="card">
                                 <div class="card-content">
                                     <p class="title is-5">
-                                        <i class="fa-solid fa-user has-text-info"></i> John Doe
-                                        <label for="modalCheckboxInfoVoluntario2" class="button is-info is-small is-light has-text-weight-bold ml-2">
+                                        <i class="fa-solid fa-user has-text-info"></i> Jon Calera
+                                        <label for="modalCheckboxInfoVoluntario2"
+                                            class="button is-info is-small is-light has-text-weight-bold ml-2">
                                             <span class="icon">
                                                 <i class="fas fa-info-circle"></i>
                                             </span>
-                                            <span>Ver Info</span>
+                                            <span class="has-text-weight-bold">Ver Información</span>
                                         </label>
                                     </p>
                                     <p>
                                         <i class="fa-solid fa-thumbtack has-text-danger"></i> Rol :
-                                        <span class="tag is-warning">Voluntario</span>
+                                        <span class="tag is-link">Voluntario</span>
                                     </p>
                                 </div>
                                 <footer class="card-footer">
                                     <label for="modalCheckboxHistoVoluntario2" class="button is-link mt-2">
                                         <i class="fa-solid fa-clock-rotate-left mr-2"></i> Ver Historial
                                     </label>
-                                    <label for="modalCheckboxContactoVoluntario3" class="button is-danger is-light mt-2">
+                                    <label for="modalCheckboxContactoVoluntario3"
+                                        class="button is-danger is-light mt-2">
                                         <i class="fa-solid fa-envelope mr-2"></i> Contactar
                                     </label>
                                 </footer>
                             </div>
                         </div>
-               
+
                         <div class="column is-4">
                             <div class="card">
                                 <div class="card-content">
                                     <p class="title is-5">
-                                        <i class="fa-solid fa-user has-text-info"></i> Jane Smith
-                                        <label for="modalCheckboxInfoVoluntario3" class="button is-info is-small is-light has-text-weight-bold ml-2">
+                                        <i class="fa-solid fa-user has-text-info"></i> June Corrido
+                                        <label for="modalCheckboxInfoVoluntario3"
+                                            class="button is-info is-small is-light has-text-weight-bold ml-2">
                                             <span class="icon">
                                                 <i class="fas fa-info-circle"></i>
                                             </span>
-                                            <span>Ver Info</span>
+                                            <span class="has-text-weight-bold">Ver Información</span>
                                         </label>
                                     </p>
                                     <p>
                                         <i class="fa-solid fa-thumbtack has-text-danger"></i> Rol :
-                                        <span class="tag is-warning">Voluntario</span>
+                                        <span class="tag is-link">Voluntario</span>
                                     </p>
                                 </div>
                                 <footer class="card-footer">
                                     <label for="modalCheckboxHistoVoluntario3" class="button is-link mt-2">
                                         <i class="fa-solid fa-clock-rotate-left mr-2"></i> Ver Historial
                                     </label>
-                                    <label for="modalCheckboxContactoVoluntario3" class="button is-danger is-light mt-2">
+                                    <label for="modalCheckboxContactoVoluntario3"
+                                        class="button is-danger is-light mt-2">
                                         <i class="fa-solid fa-envelope mr-2"></i> Contactar
                                     </label>
                                 </footer>
                             </div>
                         </div>
-               
+
                     </div>
                 </div>
-               
+
 
                 <input type="checkbox" id="modalCheckboxInfoVoluntario1" class="modal-checkbox">
                 <input type="checkbox" id="modalCheckboxHistoVoluntario1" class="modal-checkbox">
@@ -362,33 +376,39 @@
                             <p class="modal-card-title">Información del Voluntario</p>
                             <label for="modalCheckboxInfoVoluntario1" class="delete" aria-label="close"></label>
                         </header>
-                        <section class="modal-card-body">
+                        <div class="modal-card-body">
                             <div class="info-personal">
-                                <p><strong>Nombre:</strong> Lemian Lopez Garrido</p>
-                                <p><strong>Estado:</strong> Pendiente</p>
+                                <p><span class="has-text-weight-bold">Nombre:</span> Lemian Lopez Garrido</p>
+                                <p><span class="has-text-weight-bold">Estado:</span> Pendiente</p>
                             </div>
                             <div class="contacto">
-                                <p><strong>Email:</strong> eliam.lopez@gmail.com</p>
-                                <p><strong>Teléfono:</strong> +34 600 123 456</p>
+                                <p><span class="has-text-weight-bold">Email:</span> eliam.lopez@gmail.com</p>
+                                <p><span class="has-text-weight-bold">Teléfono:</span> +34 600 123 456</p>
                             </div>
                             <div class="datos-adicionales">
-                                <p><strong>Edad:</strong> 20</p>
-                                <p><strong>Curso:</strong> Desarrollo de Aplicaciones Multiplataforma</p>
+                                <p><span class="has-text-weight-bold">Edad:</span> 20</p>
+                                <p><span class="has-text-weight-bold">Curso:</span> Desarrollo de Aplicaciones
+                                    Multiplataforma</p>
                             </div>
                             <div class="experiencia">
-                                <p><strong>Experiencia:</strong></p>
-                                <p>Durante seis meses fui voluntario en una organización local de apoyo a personas en situación de vulnerabilidad.
-                                    Mi labor consistía en coordinar actividades, asistir en la gestión de recursos y colaborar en la organización de
-                                    eventos solidarios. Gracias a esta experiencia, desarrollé habilidades como el trabajo en equipo, la comunicación
-                                    efectiva y la gestión del tiempo. Además, me permitió fortalecer mi compromiso con la ayuda social y aprender a
-                                    adaptarme a diferentes situaciones para ofrecer soluciones eficaces a quienes más lo necesitaban.
+                                <p><span class="has-text-weight-bold">Experiencia:</span></p>
+                                <p>Durante seis meses fui voluntario en una organización local de apoyo a personas en
+                                    situación de vulnerabilidad.
+                                    Mi labor consistía en coordinar actividades, asistir en la gestión de recursos y
+                                    colaborar en la organización de
+                                    eventos solidarios. Gracias a esta experiencia, desarrollé habilidades como el
+                                    trabajo en equipo, la comunicación
+                                    efectiva y la gestión del tiempo. Además, me permitió fortalecer mi compromiso con
+                                    la ayuda social y aprender a
+                                    adaptarme a diferentes situaciones para ofrecer soluciones eficaces a quienes más lo
+                                    necesitaban.
                                 </p>
                             </div>
                             <div class="disponibilidad">
-                                <p><strong>Disponibilidad semanal:</strong> 3 horas</p>
-                                <p><strong>Coche propio:</strong> No</p>
+                                <p><span class="has-text-weight-bold">Disponibilidad semanal:</span> 3 horas</p>
+                                <p><span class="has-text-weight-bold">Coche propio:</span> No</p>
                             </div>
-                        </section>
+                        </div>
                     </div>
                 </div>
 
@@ -398,16 +418,14 @@
                             <p class="modal-card-title">Historial del Voluntario</p>
                             <label for="modalCheckboxHistoVoluntario1" class="delete" aria-label="close"></label>
                         </header>
-                        <section class="modal-card-body">
-                            <p><strong>Nombre:</strong> Eliam Lopez Garrido</p>
-                            <p><strong>Estado:</strong> Pendiente</p>
-                            <p><strong>Historial de Actividades:</strong></p>
+                        <div class="modal-card-body">
+                            <p><span class="has-text-weight-bold">Historial de Actividades:</span></p>
                             <ul>
                                 <li>Participación en evento solidario - Enero 2024</li>
                                 <li>Asistencia en comedor social - Diciembre 2023</li>
                                 <li>Colaboración en recogida de alimentos - Noviembre 2023</li>
                             </ul>
-                        </section>
+                        </div>
                     </div>
                 </div>
 
@@ -417,7 +435,7 @@
                             <p class="modal-card-title">Enviar Mensaje</p>
                             <label for="modalCheckboxContactoVoluntario1" class="delete" aria-label="close"></label>
                         </header>
-                        <section class="modal-card-body">
+                        <div class="modal-card-body">
                             <div class="field">
                                 <label class="label">Mensaje</label>
                                 <div class="control">
@@ -433,7 +451,7 @@
                                     </span>
                                 </label>
                             </div>
-                        </section>
+                        </div>
                         <footer class="modal-card-foot">
                             <button class="button is-success">Enviar</button>
                         </footer>
@@ -441,192 +459,198 @@
                 </div>
             </div>
 
-           
-   
-                   
-   
-                    <input type="checkbox" id="modalCheckboxInfoVoluntario2" class="modal-checkbox">
-                    <input type="checkbox" id="modalCheckboxHistoVoluntario2" class="modal-checkbox">
-                    <input type="checkbox" id="modalCheckboxContactoVoluntario2" class="modal-checkbox">
-   
-                    <div class="modal" id="modalInfo2">
-                        <div class="modal-card">
-                            <header class="modal-card-head">
-                                <p class="modal-card-title">Información del Voluntario</p>
-                                <label for="modalCheckboxInfoVoluntario2" class="delete" aria-label="close"></label>
-                            </header>
-                            <section class="modal-card-body">
-                                <div class="info-personal">
-                                    <p><strong>Nombre:</strong> Jhon Doe</p>
-                                    <p><strong>Estado:</strong> Pendiente</p>
-                                </div>
-                                <div class="contacto">
-                                    <p><strong>Email:</strong> eliam.lopez@gmail.com</p>
-                                    <p><strong>Teléfono:</strong> +34 600 123 456</p>
-                                </div>
-                                <div class="datos-adicionales">
-                                    <p><strong>Edad:</strong> 20</p>
-                                    <p><strong>Curso:</strong> Desarrollo de Aplicaciones Multiplataforma</p>
-                                </div>
-                                <div class="experiencia">
-                                    <p><strong>Experiencia:</strong></p>
-                                    <p>Durante seis meses fui voluntario en una organización local de apoyo a personas en situación de vulnerabilidad.
-                                        Mi labor consistía en coordinar actividades, asistir en la gestión de recursos y colaborar en la organización de
-                                        eventos solidarios. Gracias a esta experiencia, desarrollé habilidades como el trabajo en equipo, la comunicación
-                                        efectiva y la gestión del tiempo. Además, me permitió fortalecer mi compromiso con la ayuda social y aprender a
-                                        adaptarme a diferentes situaciones para ofrecer soluciones eficaces a quienes más lo necesitaban.
-                                    </p>
-                                </div>
-                                <div class="disponibilidad">
-                                    <p><strong>Disponibilidad semanal:</strong> 3 horas</p>
-                                    <p><strong>Coche propio:</strong> No</p>
-                                </div>
-                            </section>
+
+
+
+
+            <input type="checkbox" id="modalCheckboxInfoVoluntario2" class="modal-checkbox">
+            <input type="checkbox" id="modalCheckboxHistoVoluntario2" class="modal-checkbox">
+            <input type="checkbox" id="modalCheckboxContactoVoluntario2" class="modal-checkbox">
+
+            <div class="modal" id="modalInfo2">
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Información del Voluntario</p>
+                        <label for="modalCheckboxInfoVoluntario2" class="delete" aria-label="close"></label>
+                    </header>
+                    <div class="modal-card-body">
+                        <div class="info-personal">
+                            <p><span class="has-text-weight-bold">Nombre:</span> Jon Calera</p>
+                            <p><span class="has-text-weight-bold">Rol:</span> Voluntario</p>
                         </div>
-                    </div>
-   
-                    <div class="modal" id="modalHisto2">
-                        <div class="modal-card">
-                            <header class="modal-card-head">
-                                <p class="modal-card-title">Historial del Voluntario</p>
-                                <label for="modalCheckboxHistoVoluntario2" class="delete" aria-label="close"></label>
-                            </header>
-                            <section class="modal-card-body">
-                                <p><strong>Nombre:</strong>  Jhon Doe</p>
-                                <p><strong>Estado:</strong> Pendiente</p>
-                                <p><strong>Historial de Actividades:</strong></p>
-                                <ul>
-                                    <li>Participación en evento solidario - Enero 2024</li>
-                                    <li>Asistencia en comedor social - Diciembre 2023</li>
-                                    <li>Colaboración en recogida de alimentos - Noviembre 2023</li>
-                                </ul>
-                            </section>
+                        <div class="contacto">
+                            <p><span class="has-text-weight-bold">Email:</span> jon.calera@gmail.com</p>
+                            <p><span class="has-text-weight-bold">Teléfono:</span> +34 600 123 456</p>
                         </div>
-                    </div>
-   
-                    <div class="modal" id="modalContacto2">
-                        <div class="modal-card">
-                            <header class="modal-card-head">
-                                <p class="modal-card-title">Enviar Mensaje</p>
-                                <label for="modalCheckboxContactoVoluntario2" class="delete" aria-label="close"></label>
-                            </header>
-                            <section class="modal-card-body">
-                                <div class="field">
-                                    <label class="label">Mensaje</label>
-                                    <div class="control">
-                                        <textarea class="textarea" placeholder="Escribe tu mensaje aquí..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="file has-name is-fullwidth">
-                                    <label class="file-label">
-                                        <input class="file-input" type="file">
-                                        <span class="file-cta">
-                                            <span class="icon">📎</span>
-                                            <span class="file-label">Adjuntar archivo...</span>
-                                        </span>
-                                    </label>
-                                </div>
-                            </section>
-                            <footer class="modal-card-foot">
-                                <button class="button is-success">Enviar</button>
-                            </footer>
+                        <div class="datos-adicionales">
+                            <p><span class="has-text-weight-bold">Edad:</span> 20</p>
+                            <p><span class="has-text-weight-bold">Curso:</span> Desarrollo de Aplicaciones
+                                Multiplataforma</p>
+                        </div>
+                        <div class="experiencia">
+                            <p><span class="has-text-weight-bold">Experiencia:</span></p>
+                            <p>Durante seis meses fui voluntario en una organización local de apoyo a personas en
+                                situación de vulnerabilidad.
+                                Mi labor consistía en coordinar actividades, asistir en la gestión de recursos y
+                                colaborar en la organización de
+                                eventos solidarios. Gracias a esta experiencia, desarrollé habilidades como el trabajo
+                                en equipo, la comunicación
+                                efectiva y la gestión del tiempo. Además, me permitió fortalecer mi compromiso con la
+                                ayuda social y aprender a
+                                adaptarme a diferentes situaciones para ofrecer soluciones eficaces a quienes más lo
+                                necesitaban.
+                            </p>
+                        </div>
+                        <div class="disponibilidad">
+                            <p><span class="has-text-weight-bold">Disponibilidad semanal:</span> 3 horas</p>
+                            <p><span class="has-text-weight-bold">Coche propio:</span> No</p>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <input type="checkbox" id="modalCheckboxInfoVoluntario3" class="modal-checkbox">
-                <input type="checkbox" id="modalCheckboxHistoVoluntario3" class="modal-checkbox">
-                <input type="checkbox" id="modalCheckboxContactoVoluntario3" class="modal-checkbox">
-
-                <div class="modal" id="modalContacto3">
-                    <div class="modal-card">
-                        <header class="modal-card-head">
-                            <p class="modal-card-title">Enviar Mensaje</p>
-                            <label for="modalCheckboxContactoVoluntario3" class="delete" aria-label="close"></label>
-                        </header>
-                        <section class="modal-card-body">
-                            <div class="field">
-                                <label class="label">Mensaje</label>
-                                <div class="control">
-                                    <textarea class="textarea" placeholder="Escribe tu mensaje aquí..."></textarea>
-                                </div>
-                            </div>
-                            <div class="file has-name is-fullwidth">
-                                <label class="file-label">
-                                    <input class="file-input" type="file">
-                                    <span class="file-cta">
-                                        <span class="icon">📎</span>
-                                        <span class="file-label">Adjuntar archivo...</span>
-                                    </span>
-                                </label>
-                            </div>
-                        </section>
-                        <footer class="modal-card-foot">
-                            <button class="button is-success">Enviar</button>
-                        </footer>
+            <div class="modal" id="modalHisto2">
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Historial del Voluntario</p>
+                        <label for="modalCheckboxHistoVoluntario2" class="delete" aria-label="close"></label>
+                    </header>
+                    <div class="modal-card-body">
+                        <p><span class="has-text-weight-bold">Historial de Actividades:</span></p>
+                        <ul>
+                            <li>Participación en evento solidario - Enero 2024</li>
+                            <li>Asistencia en comedor social - Diciembre 2023</li>
+                            <li>Colaboración en recogida de alimentos - Noviembre 2023</li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+
+            <div class="modal" id="modalContacto2">
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Enviar Mensaje</p>
+                        <label for="modalCheckboxContactoVoluntario2" class="delete" aria-label="close"></label>
+                    </header>
+                    <div class="modal-card-body">
+                        <div class="field">
+                            <label class="label">Mensaje</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+                        </div>
+                        <div class="file has-name is-fullwidth">
+                            <label class="file-label">
+                                <input class="file-input" type="file">
+                                <span class="file-cta">
+                                    <span class="icon">📎</span>
+                                    <span class="file-label">Adjuntar archivo...</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <footer class="modal-card-foot">
+                        <button class="button is-success">Enviar</button>
+                    </footer>
+                </div>
+            </div>
+            </div>
+
+            <input type="checkbox" id="modalCheckboxInfoVoluntario3" class="modal-checkbox">
+            <input type="checkbox" id="modalCheckboxHistoVoluntario3" class="modal-checkbox">
+            <input type="checkbox" id="modalCheckboxContactoVoluntario3" class="modal-checkbox">
+
+            <div class="modal" id="modalContacto3">
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Enviar Mensaje</p>
+                        <label for="modalCheckboxContactoVoluntario3" class="delete" aria-label="close"></label>
+                    </header>
+                    <div class="modal-card-body">
+                        <div class="field">
+                            <label class="label">Mensaje</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+                        </div>
+                        <div class="file has-name is-fullwidth">
+                            <label class="file-label">
+                                <input class="file-input" type="file">
+                                <span class="file-cta">
+                                    <span class="icon">📎</span>
+                                    <span class="file-label">Adjuntar archivo...</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <footer class="modal-card-foot">
+                        <button class="button is-success">Enviar</button>
+                    </footer>
                 </div>
             </div>
 
             <div class="modal" id="modalInfo3">
 
-                  <div class="modal-card">
-                      <header class="modal-card-head">
-                          <p class="modal-card-title">Información del Voluntario</p>
-                          <label for="modalCheckboxInfoVoluntario3" class="delete" aria-label="close"></label>
-                      </header>
-                      <section class="modal-card-body">
-                          <div class="info-personal">
-                              <p><strong>Nombre:</strong> Jane Smith</p>
-                              <p><strong>Estado:</strong> Pendiente</p>
-                          </div>
-                          <div class="contacto">
-                              <p><strong>Email:</strong> eliam.lopez@gmail.com</p>
-                              <p><strong>Teléfono:</strong> +34 600 123 456</p>
-                          </div>
-                          <div class="datos-adicionales">
-                              <p><strong>Edad:</strong> 20</p>
-                              <p><strong>Curso:</strong> Desarrollo de Aplicaciones Multiplataforma</p>
-                          </div>
-                          <div class="experiencia">
-                              <p><strong>Experiencia:</strong></p>
-                              <p>Durante seis meses fui voluntario en una organización local de apoyo a personas en situación de vulnerabilidad.
-                                  Mi labor consistía en coordinar actividades, asistir en la gestión de recursos y colaborar en la organización de
-                                  eventos solidarios. Gracias a esta experiencia, desarrollé habilidades como el trabajo en equipo, la comunicación
-                                  efectiva y la gestión del tiempo. Además, me permitió fortalecer mi compromiso con la ayuda social y aprender a
-                                  adaptarme a diferentes situaciones para ofrecer soluciones eficaces a quienes más lo necesitaban.
-                              </p>
-                          </div>
-                          <div class="disponibilidad">
-                              <p><strong>Disponibilidad semanal:</strong> 3 horas</p>
-                              <p><strong>Coche propio:</strong> No</p>
-                          </div>
-                      </section>
-                  </div>
-              </div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Información del Voluntario</p>
+                        <label for="modalCheckboxInfoVoluntario3" class="delete" aria-label="close"></label>
+                    </header>
+                    <div class="modal-card-body">
+                        <div class="info-personal">
+                            <p><span class="has-text-weight-bold">Nombre:</span> June Garrido</p>
+                            <p><span class="has-text-weight-bold">Rol:</span> Voluntario</p>
+                        </div>
+                        <div class="contacto">
+                            <p><span class="has-text-weight-bold">Email:</span> june.garrido@gmail.com</p>
+                            <p><span class="has-text-weight-bold">Teléfono:</span> +34 600 123 456</p>
+                        </div>
+                        <div class="datos-adicionales">
+                            <p><span class="has-text-weight-bold">Edad:</span> 20</p>
+                            <p><span class="has-text-weight-bold">Curso:</span> Desarrollo de Aplicaciones
+                                Multiplataforma</p>
+                        </div>
+                        <div class="experiencia">
+                            <p><span class="has-text-weight-bold">Experiencia:</span></p>
+                            <p>Durante seis meses fui voluntario en una organización local de apoyo a personas en
+                                situación de vulnerabilidad.
+                                Mi labor consistía en coordinar actividades, asistir en la gestión de recursos y
+                                colaborar en la organización de
+                                eventos solidarios. Gracias a esta experiencia, desarrollé habilidades como el trabajo
+                                en equipo, la comunicación
+                                efectiva y la gestión del tiempo. Además, me permitió fortalecer mi compromiso con la
+                                ayuda social y aprender a
+                                adaptarme a diferentes situaciones para ofrecer soluciones eficaces a quienes más lo
+                                necesitaban.
+                            </p>
+                        </div>
+                        <div class="disponibilidad">
+                            <p><span class="has-text-weight-bold">Disponibilidad semanal:</span> 3 horas</p>
+                            <p><span class="has-text-weight-bold">Coche propio:</span> Si</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-              <div class="modal" id="modalHisto3">
-                  <div class="modal-card">
-                      <header class="modal-card-head">
-                          <p class="modal-card-title">Historial del Voluntario</p>
-                          <label for="modalCheckboxHistoVoluntario3" class="delete" aria-label="close"></label>
-                      </header>
-                      <section class="modal-card-body">
-                          <p><strong>Nombre:</strong> Jane Smith</p>
-                          <p><strong>Estado:</strong> Pendiente</p>
-                          <p><strong>Historial de Actividades:</strong></p>
-                          <ul>
-                              <li>Participación en evento solidario - Enero 2024</li>
-                              <li>Asistencia en comedor social - Diciembre 2023</li>
-                              <li>Colaboración en recogida de alimentos - Noviembre 2023</li>
-                          </ul>
-                      </section>
-                  </div>
-              </div>
-        </section>
+            <div class="modal" id="modalHisto3">
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Historial del Voluntario</p>
+                        <label for="modalCheckboxHistoVoluntario3" class="delete" aria-label="close"></label>
+                    </header>
+                    <div class="modal-card-body">
+                        <p><span class="has-text-weight-bold">Historial de Actividades:</span></p>
+                        <ul>
+                            <li>Participación en evento solidario - Enero 2024</li>
+                            <li>Asistencia en comedor social - Diciembre 2023</li>
+                            <li>Colaboración en recogida de alimentos - Noviembre 2023</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </main>
 
-    <section class="section">
+    <div class="section">
         <div class="pagination" role="navigation" aria-label="pagination">
             <a class="pagination-previous is-disabled" title="This is the first page">Previous</a>
             <a href="#" class="pagination-next">Next page</a>
@@ -642,11 +666,11 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </div>
 
-    <section>
+    <div>
         <a href="#top" id="backToTop" class="back-to-top">↑</a>
-    </section>
+    </div>
 
     <footer class="footer">
         <div class="columns">

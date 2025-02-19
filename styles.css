@@ -20,25 +20,25 @@ html {
     align-items: center;
 }
 
-#modalCheckboxInicio:checked ~ .inicioSesion,
-#modalCheckboxRegistro:checked ~ .registro,
-#modalCheckboxVoluntario1:checked ~ #modalVoluntario1,
-#modalCheckboxVoluntario2:checked ~ #modalVoluntario2,
-#modalCheckboxVoluntario3:checked ~ #modalVoluntario3, 
-#modalCheckboxProyecto1:checked ~ #modalProyecto1,
-#modalCheckboxProyecto2:checked ~ #modalProyecto2,
-#modalCheckboxProyecto3:checked ~ #modalProyecto3,
-#modalCheckboxProyectos:checked ~ .modal,
-.modal-checkbox:checked + .modal,
-#modalCheckboxInfoVoluntario1:checked ~ #modalInfo1,
-#modalCheckboxHistoVoluntario1:checked ~ #modalHisto1,
-#modalCheckboxContactoVoluntario1:checked ~ #modalContacto1,
-#modalCheckboxInfoVoluntario2:checked ~ #modalInfo2,
-#modalCheckboxHistoVoluntario2:checked ~ #modalHisto2,
-#modalCheckboxContactoVoluntario2:checked ~ #modalContacto2,
-#modalCheckboxInfoVoluntario3:checked ~ #modalInfo3,
-#modalCheckboxHistoVoluntario3:checked ~ #modalHisto3,
-#modalCheckboxContactoVoluntario3:checked ~ #modalContacto3 {
+#modalCheckboxInicio:checked~.inicioSesion,
+#modalCheckboxRegistro:checked~.registro,
+#modalCheckboxVoluntario1:checked~#modalVoluntario1,
+#modalCheckboxVoluntario2:checked~#modalVoluntario2,
+#modalCheckboxVoluntario3:checked~#modalVoluntario3,
+#modalCheckboxProyecto1:checked~#modalProyecto1,
+#modalCheckboxProyecto2:checked~#modalProyecto2,
+#modalCheckboxProyecto3:checked~#modalProyecto3,
+#modalCheckboxProyectoMiembros1:checked~#ProyectoMiembros1,
+#modalCheckboxProyectoInfo1:checked~#ProyectoInfo1,
+#modalCheckboxInfoVoluntario1:checked~#modalInfo1,
+#modalCheckboxHistoVoluntario1:checked~#modalHisto1,
+#modalCheckboxContactoVoluntario1:checked~#modalContacto1,
+#modalCheckboxInfoVoluntario2:checked~#modalInfo2,
+#modalCheckboxHistoVoluntario2:checked~#modalHisto2,
+#modalCheckboxContactoVoluntario2:checked~#modalContacto2,
+#modalCheckboxInfoVoluntario3:checked~#modalInfo3,
+#modalCheckboxHistoVoluntario3:checked~#modalHisto3,
+#modalCheckboxContactoVoluntario3:checked~#modalContacto3 {
     display: flex;
 }
 
@@ -610,4 +610,3 @@ input[type="checkbox"]:checked~label.toggle-label::after {
     color: whitesmoke !important;
     background-color: #000080 !important;
 }
-

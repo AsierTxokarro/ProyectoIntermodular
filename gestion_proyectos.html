@@ -96,11 +96,11 @@
                         </div>
 
                         <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link" href="./gestion_voluntarios.html">
+                            <a class="navbar-link" href="./gestion_voluntariado.html">
                                 GESTIÓN DE VOLUNTARIADO
                             </a>
                             <div class="navbar-dropdown">
-                                <a href="./gestion_voluntarios.html" class="navbar-item">
+                                <a href="./gestion_voluntariado.html" class="navbar-item">
                                     VOLUNTARIOS ACTIVOS
                                 </a>
                                 <a href="./voluntarios_pendientes.html" class="navbar-item">
@@ -134,7 +134,7 @@
                 <nav class="level">
                     <div class="level-left">
                         <div class="level-item">
-                            <h1 class="title has-text-black-bis">Gestión de Proyectos</h1>
+                            <h1 class="title has-text-black-bis">Gestión de proyectos</h1>
                         </div>
                     </div>
                     <div class="level-right">
@@ -151,24 +151,25 @@
         <section class="section">
             <div class="container">
                 <h1 class="title has-text-centered navy">Proyectos en curso</h1>
-
-
-
-                
+        
+        
+        
+        
                 <div class="container barraFiltros">
                     <div class="field">
                         <div class="control has-icons-left">
-                            <input class="input" type="text" placeholder="Buscar proyectos" id="searchInput">
+                            <input class="input" type="text" placeholder="Buscar proyectos..." id="searchInput">
                             <span class="icon is-left has-text-primary">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </span>
                         </div>
                     </div>
-                    
+        
                     <div class="filter-bar">
                         <div class="dropdown ">
                             <div class="dropdown-trigger">
-                                <button class="button is-link has-text-white " aria-haspopup="true" aria-controls="dropdown-menu">
+                                <button class="button is-link has-text-white " aria-haspopup="true"
+                                    aria-controls="dropdown-menu">
                                     <span>Filtrar por</span>
                                     <span class="icon is-small">
                                         <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -176,16 +177,11 @@
                                 </button>
                             </div>
                             <div class="dropdown-menu dropdown-content" id="dropdown-menu" role="menu">
-                                
                                 <div class="dropdown-item">
-                                    <label class="label">Voluntariados participados:</label>
-                                    <input class="input" type="number" placeholder="Introduce el numero minimo" min="0" required>
-                                </div>
-                                <div class="dropdown-item">
-                                    <label class="label">Tipo de voluntariado de interes:</label>
+                                    <label class="label">Tipo:</label>
                                     <div class="select">
                                         <select>
-                                            <option value="">Tipos</option>
+                                            <option value="Todos">Todos</option>
                                             <option value="Social">Social</option>
                                             <option value="Educativo">Educativo</option>
                                             <option value="Cultural">Cultural</option>
@@ -198,72 +194,30 @@
                                     </div>
                                 </div>
                                 <div class="dropdown-item">
-                                    <label class="label">Selecciona una opción:</label>
-                                    <div class="select">
-                                        <select>
-                                            <option value="">Curso</option>
-                                            <option value="CFS Administración y Finanzas DUAL">CFS Administración y Finanzas DUAL</option>
-                                            <option value="CFS Comercio Internacional DUAL BILINGÜE">CFS Comercio Internacional DUAL BILINGÜE
-                                            </option>
-                                            <option value="CFS Gestión de Ventas y Espacios Comerciales DUAL">CFS Gestión de Ventas y Espacios
-                                                Comerciales DUAL</option>
-                                            <option value="CFS Transporte y Logística DUAL">CFS Transporte y Logística DUAL</option>
-                                            <option value="CFS Transporte y Logística Virtual">CFS Transporte y Logística Virtual</option>
-                                            <option value="CFS Administración de Sistemas Informáticos en Red DUAL">CFS Administración de Sistemas
-                                                Informáticos en Red DUAL</option>
-                                            <option value="CFS Desarrollo de Aplicaciones Multiplataforma DUAL">CFS Desarrollo de Aplicaciones
-                                                Multiplataforma DUAL</option>
-                                        </select>
-                                    </div>
+                                    <label class="label">Participantes:</label>
+                                    <input class="input" type="number" placeholder="Número total" min="0"
+                                        required>
                                 </div>
                                 <div class="dropdown-item">
-                                    <label class="label">Curso:</label>
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Primero
+                                    <label class="label">Estado:</label>
+                                    <label class="radio">
+                                      <input type="radio" name="answer" />
+                                      Activo
                                     </label>
-                                </div>
-                                <div class="dropdown-item">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Segundo
+                                    <label class="radio">
+                                      <input type="radio" name="answer" />
+                                      Archivado
                                     </label>
-                                </div>
+                                  </div>
                                 <div class="dropdown-item">
-                                    <label class="label">Posición:</label>
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Alumno
-                                    </label>
+                                    <button class="button is-link is-fullwidth" href="#">Aplicar Filtros</button>
                                 </div>
-                                <div class="dropdown-item">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Profesor
-                                    </label>
-                                </div>
-                                <div class="dropdown-item">
-                                    <label class="label">En un voluntariado actualmente:</label>
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        Si
-                                    </label>
-                                </div>
-                                <div class="dropdown-item">
-                                    <label class="checkbox">
-                                        <input type="checkbox">
-                                        No
-                                    </label>
-                                </div>
-                                <div class="dropdown-item">
-                                    <button class="button is-link is-fullwidth" onclick="applyFilters()">Aplicar Filtros</button>
-                                </div>
-                                
                             </div>
                         </div>
                         <div class="dropdown is-right" id="Ordenar">
                             <div class="dropdown-trigger">
-                                <button class="button is-link has-text-white" aria-haspopup="true" aria-controls="dropdown-order-menu">
+                                <button class="button is-link has-text-white" aria-haspopup="true"
+                                    aria-controls="dropdown-order-menu">
                                     <span>Orden</span>
                                     <span class="icon is-small">
                                         <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -280,14 +234,6 @@
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-                
                 <div class="container">
                     <div class="columns is-multiline">
                         <div class="column is-4">
@@ -295,17 +241,17 @@
                                 <div class="card-content">
                                     <p class="title is-5">
                                         <i class="fa-solid fa-book-open has-text-primary"></i> Apoyo Escolar
-
+        
                                     </p>
-
+        
                                     <p class="subtitle is-6">
                                         <i class="fa-solid fa-user has-text-info"></i> Responsable: Juan Dominguez
                                     </p>
                                     <p>
-                                        <i class="fa-solid fa-calendar has-text-primary"></i> Fecha propuesta: 10 de
+                                        <i class="fa-solid fa-calendar has-text-primary"></i> Fecha actividad: 10 de
                                         febrero
                                     </p>
-
+        
                                     <p>
                                         <i class="fa-solid fa-thumbtack has-text-danger"></i> Estado: <span
                                             class="tag is-info">Activo</span>
@@ -315,11 +261,10 @@
                                             <span>Ver Información</span>
                                         </label>
                                     </p>
-
+        
                                 </div>
                                 <footer class="card-footer">
-                                    <label for="modalCheckboxMiembros1"
-                                        class="card-footer-item button is-success is-light">
+                                    <label for="modalCheckboxMiembros1" class="card-footer-item button is-success is-light">
                                         <i class="fa-solid fa-user mr-2"></i> Administrar miembros
                                     </label>
                                     <button class="card-footer-item button is-danger is-light">
@@ -328,9 +273,9 @@
                                 </footer>
                             </div>
                         </div>
-
+        
                         <input type="checkbox" id="modalCheckboxMiembros1" class="modal-checkbox" hidden>
-
+        
                         <div class="modal">
                             <div class="modal-background"></div>
                             <div class="modal-card">
@@ -370,11 +315,11 @@
                                 </footer>
                             </div>
                         </div>
-
+        
                         <input type="checkbox" id="modalInfoProyecto1" class="is-hidden">
                         <input type="checkbox" id="modalCheckboxProyecto1" class="modal-checkbox is-hidden">
-
-
+        
+        
                         <div class="modal modal-proyecto" id="modalInfo1">
                             <div class="modal-background"></div>
                             <div class="modal-card">
@@ -392,9 +337,11 @@
                                 </section>
                             </div>
                         </div>
-
+                    </div>
+                </div>
+            </div>
         </section>
-    </main>
+        </main>
 
     <section class="section">
         <div class="pagination" role="navigation" aria-label="pagination">

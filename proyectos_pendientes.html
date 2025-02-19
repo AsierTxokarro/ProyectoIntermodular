@@ -97,11 +97,11 @@
             </div>
 
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="./gestion_voluntarios.html">
+              <a class="navbar-link" href="./gestion_voluntariado.html">
                 GESTIÓN DE VOLUNTARIADO
               </a>
               <div class="navbar-dropdown">
-                <a href="./gestion_voluntarios.html" class="navbar-item">
+                <a href="./gestion_voluntariado.html" class="navbar-item">
                   VOLUNTARIOS ACTIVOS
                 </a>
                 <a href="./voluntarios_pendientes.html" class="navbar-item">
@@ -137,7 +137,7 @@
         <nav class="level">
           <div class="level-left">
             <div class="level-item">
-              <h1 class="title has-text-black-bis">Gestión de Proyectos</h1>
+              <h1 class="title has-text-black-bis">Gestión de proyectos</h1>
             </div>
           </div>
           <div class="level-right">
@@ -155,14 +155,84 @@
       <div class="container">
         <h1 class="title has-text-centered navy">Proyectos pendientes</h1>
 
-        <div class="field">
-          <div class="control has-icons-left">
-            <input class="input" type="text" placeholder="Buscar proyectos..." id="searchInput">
-            <span class="icon is-left has-text-primary">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
+        <div class="container barraFiltros">
+          <div class="field">
+              <div class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Buscar proyectos..." id="searchInput">
+                  <span class="icon is-left has-text-primary">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+              </div>
           </div>
-        </div>
+
+          <div class="filter-bar">
+              <div class="dropdown ">
+                  <div class="dropdown-trigger">
+                      <button class="button is-link has-text-white " aria-haspopup="true"
+                          aria-controls="dropdown-menu">
+                          <span>Filtrar por</span>
+                          <span class="icon is-small">
+                              <i class="fas fa-angle-down" aria-hidden="true"></i>
+                          </span>
+                      </button>
+                  </div>
+                  <div class="dropdown-menu dropdown-content" id="dropdown-menu" role="menu">
+                      <div class="dropdown-item">
+                          <label class="label">Tipo:</label>
+                          <div class="select">
+                              <select>
+                                  <option value="Todos">Todos</option>
+                                  <option value="Social">Social</option>
+                                  <option value="Educativo">Educativo</option>
+                                  <option value="Cultural">Cultural</option>
+                                  <option value="Ambiental">Ambiental</option>
+                                  <option value="Salud">Salud</option>
+                                  <option value="Internacional">Internacional</option>
+                                  <option value="Deportivo">Deportivo</option>
+                                  <option value="Digital">Digital</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="dropdown-item">
+                          <label class="label">Participantes:</label>
+                          <input class="input" type="number" placeholder="Número total" min="0"
+                              required>
+                      </div>
+                      <div class="dropdown-item">
+                          <label class="label">Estado:</label>
+                          <label class="radio">
+                            <input type="radio" name="answer" />
+                            Activo
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="answer" />
+                            Archivado
+                          </label>
+                      </div>
+                      <div class="dropdown-item">
+                          <button class="button is-link is-fullwidth" href="#">Aplicar Filtros</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="dropdown is-right" id="Ordenar">
+                  <div class="dropdown-trigger">
+                      <button class="button is-link has-text-white" aria-haspopup="true"
+                          aria-controls="dropdown-order-menu">
+                          <span>Orden</span>
+                          <span class="icon is-small">
+                              <i class="fas fa-angle-down" aria-hidden="true"></i>
+                          </span>
+                      </button>
+                  </div>
+                  <div class="dropdown-menu dropdown-content" id="dropdown-order-menu" role="menu">
+                      <div>
+                          <a href="#" class="dropdown-item">Ascendente</a>
+                          <a href="#" class="dropdown-item">Descendente</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
         <div class="columns is-multiline">
           <div class="column is-4">
